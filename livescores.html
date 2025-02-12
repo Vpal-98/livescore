@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Scores</title>
+    <link rel="stylesheet" href="./static/css/live.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="img/Screenshot (39).png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/Screenshot (39).png" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">Live Scores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dropdown">
+              <li class="dropbtn" style="color: cadetblue">
+                <strong>more &#x25BE;</strong>
+                <div class="dropdown-content">
+                  <a href="ipl.html">League Teams</a>
+                  <a href="points_table.html">Points Table</a>
+                  <a href="series All.html">Series</a>
+                  <a href="Gallaries.html">Gallaries</a>
+                  <a href="#Matches.html">Matches</a>
+                  <!-- <a href="#Highlights.html">Highlights</a> -->
+                </div>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">livescores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <h1 class="lcs">Live Cricket Scores</h1>
+    <br /><br /><br /><br /><br />
+    <main>
+      <!-- Featured Match -->
+      <div class="live-scores">
+        <!-- Series 1 -->
+        <div class="series">
+          <div class="series-header">INDIA TOUR OF AUSTRALIA, 2024-25</div>
+          <div class="match">
+            <div class="match-header">India vs Australia, 5th Test</div>
+            <div class="score">IND 185 & 141-6 (56) | AUS 181</div>
+            <div class="status">Day 2: Stumps - India lead by 145 runs</div>
+            <div class="stats">
+              <table
+                class="batsman-stats"
+                style="background-color: grey; width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th>Batsman</th>
+                    <th>R</th>
+                    <th>B</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>SR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>N. Reddy<sup>*</sup></td>
+                    <td>45</td>
+                    <td>30</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>150.00</td>
+                  </tr>
+                  <tr>
+                    <td>W. sundar</td>
+                    <td>22</td>
+                    <td>25</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>88.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table
+                class="bowler-stats"
+                style="background-color: grey; width: 100%; margin-top: 10px"
+              >
+                <thead>
+                  <tr>
+                    <th>Bowler</th>
+                    <th>O</th>
+                    <th>M</th>
+                    <th>R</th>
+                    <th>W</th>
+                    <th>Econ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Boland</td>
+                    <td>10</td>
+                    <td>2</td>
+                    <td>40</td>
+                    <td>3</td>
+                    <td>4.00</td>
+                  </tr>
+                  <tr>
+                    <td>M. Starc</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>35</td>
+                    <td>1</td>
+                    <td>4.37</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="links">
+              <a href="squads.html">Squads</a>
+              <a href="#">Scorecard</a>
+              <a href="highlights.html">Highlights</a>
+              <a href="#">News</a>
+              <a href="#">Full commentary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Series 2 -->
+        <div class="series">
+          <div class="series-header">
+            PAKISTAN TOUR OF SOUTH AFRICA, 2024-25
+          </div>
+          <div class="match">
+            <div class="match-header">South Africa vs Pakistan, 2nd Test</div>
+            <div class="score">RSA 429-5 (110)</div>
+            <div class="status">Day 2: Lunch Break</div>
+            <div class="stats">
+              <table
+                class="batsman-stats"
+                style="background-color: grey; width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th>Batsman</th>
+                    <th>R</th>
+                    <th>B</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>SR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>H. Klassen<sup>*</sup></td>
+                    <td>78</td>
+                    <td>95</td>
+                    <td>10</td>
+                    <td>1</td>
+                    <td>82.11</td>
+                  </tr>
+                  <tr>
+                    <td>Jansen</td>
+                    <td>34</td>
+                    <td>45</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>75.56</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table
+                class="bowler-stats"
+                style="background-color: grey; width: 100%; margin-top: 10px"
+              >
+                <thead>
+                  <tr>
+                    <th>Bowler</th>
+                    <th>O</th>
+                    <th>M</th>
+                    <th>R</th>
+                    <th>W</th>
+                    <th>Econ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>H. Rauf</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>50</td>
+                    <td>2</td>
+                    <td>4.16</td>
+                  </tr>
+                  <tr>
+                    <td>S. Afridi</td>
+                    <td>10</td>
+                    <td>1</td>
+                    <td>48</td>
+                    <td>0</td>
+                    <td>4.80</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="links">
+              <a href="#">Squads</a>
+              <a href="#">Scorecard</a>
+              <a href="#">Highlights</a>
+              <a href="#">News</a>
+              <a href="#">Full commentary</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Series Example -->
+        <div class="series">
+          <div class="series-header">IRELAND TOUR OF ZIMBABWE, 2024-25</div>
+          <div class="match">
+            <div class="match-header">Ireland vs Zimbabwe, 1st T20I</div>
+            <div class="score1">
+              <img src="img/Flag_of_Ireland (1).svg" alt="Ireland Flag" />
+              Ireland: 156/7 (20)
+            </div>
+            <div class="score1">
+              <img src="img/Flag-Zimbabwe.webp" alt="Zimbabwe Flag" /> Zimbabwe:
+              150/9 (20)
+            </div>
+            <div class="status">Ireland won by 6 runs</div>
+            <div class="stats">
+              <table
+                class="batsman-stats"
+                style="background-color: grey; width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th>Batsman</th>
+                    <th>R</th>
+                    <th>B</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>SR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>R. Burl<sup>*</sup></td>
+                    <td>62</td>
+                    <td>45</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>137.77</td>
+                  </tr>
+                  <tr>
+                    <td>R. Ngarava</td>
+                    <td>29</td>
+                    <td>20</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>145.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table
+                class="bowler-stats"
+                style="background-color: grey; width: 100%; margin-top: 10px"
+              >
+                <thead>
+                  <tr>
+                    <th>Bowler</th>
+                    <th>O</th>
+                    <th>M</th>
+                    <th>R</th>
+                    <th>W</th>
+                    <th>Econ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>M. Adair</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>25</td>
+                    <td>3</td>
+                    <td>6.25</td>
+                  </tr>
+                  <tr>
+                    <td>C. Young</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>32</td>
+                    <td>2</td>
+                    <td>8.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="links">
+              <a href="#">Squads</a>
+              <a href="#">Scorecard</a>
+              <a href="#">Highlights</a>
+              <a href="#">News</a>
+              <a href="#">Full commentary</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="series">
+          <div class="series-header">NEPAL TOUR OF NEWZEALAND, 2025</div>
+          <div class="match">
+            <div class="match-header">Nepal vs NewZealand, 1st ODI</div>
+            <div class="score1">
+              <img src="img/Flag_of_Nepal.svg.png" alt="Nepal Flag" /> Nepal:
+              0/0 (0.0/50)
+            </div>
+            <div class="score1">
+              <img
+                src="img/Flag_of_New_Zealand.svg.png"
+                alt="NewZealand Flag"
+              />
+              NewZealand: (50)
+            </div>
+            <div class="status">Nepal won the toss elected to bat first</div>
+            <div class="stats">
+              <table
+                class="batsman-stats"
+                style="background-color: grey; width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th>Batsman</th>
+                    <th>R</th>
+                    <th>B</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>SR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Player 1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Player 2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table
+                class="bowler-stats"
+                style="background-color: grey; width: 100%; margin-top: 10px"
+              >
+                <thead>
+                  <tr>
+                    <th>Bowler</th>
+                    <th>O</th>
+                    <th>M</th>
+                    <th>R</th>
+                    <th>W</th>
+                    <th>Econ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bowler 1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Bowler 2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="links">
+              <a href="#">Squads</a>
+              <a href="#">Scorecard</a>
+              <a href="#">Highlights</a>
+              <a href="#">News</a>
+              <a href="#">Full commentary</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br /><br /><br /><br />
+
+      <!-- Live Score Ticker 
+    <div class="score-ticker">
+      <div id="live-scores">
+        <span>India 210/3 (35.0) vs Australia 208/10 (50.0)</span>
+        <span>Pakistan 175/5 (40.2) vs England 300/7 (50.0)</span>
+        <span>South Africa 150/2 (20.0) vs New Zealand 149/10 (19.4)</span>
+      </div>
+    </div>
+    <br><br><br>
+    match highlights 
+      <section class="score-details">
+     <h2>Match Highlights</h2>
+     <div class="match" id="match-1">
+       <h3>India vs Australia</h3>
+       <p>India needs 1 run to win with 3 wickets in hand.</p>
+       <button onclick="showNotification('WICKET! Australia strikes again!')"  style="background-color: blue; height: 30px; border-radius: 10px; color: yellow;cursor:default;" 
+       onmouseover="this.style.backgroundColor='red'" 
+       onmouseout="this.style.backgroundColor='blue'"><b>Trigger Wicket Alert</b></button>
+     </div><br/><br/><br/>
+
+     <div class="match" id="match-2">
+       <h3>Pakistan vs England</h3>
+       <p>Pakistan is chasing 300 with 5 wickets down.</p>
+     </div>
+   </section> -->
+
+      <!-- Notification -->
+      <!-- <div id="notification" class="notification">WICKET! Australia strikes again!</div> -->
+    </main>
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0; margin: 0">
+          <li>
+            <a href="index.html" style="color: white; text-decoration: none"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="livescores.html"
+              style="color: white; text-decoration: none"
+              >Live Scores</a
+            >
+          </li>
+          <li>
+            <a href="teams.html" style="color: white; text-decoration: none"
+              >Teams</a
+            >
+          </li>
+          <li>
+            <a href="schedule.html" style="color: white; text-decoration: none"
+              >Schedule</a
+            >
+          </li>
+          <li>
+            <a href="news.html" style="color: white; text-decoration: none"
+              >News</a
+            >
+          </li>
+          <li>
+            <a href="about.html" style="color: white; text-decoration: none"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" style="color: white; text-decoration: none"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="index.html"
+          ><img src="/img/logoai.png" alt="Footer Logo" id="footer-logo"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <p style="text-align: center">
+          Follow us on <br /><br />
+          <a
+            href="https://www.facebook.com/?_rdr"
+            class="social-icon"
+            style="color: #3b5998"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://x.com/i/flow/login"
+            class="social-icon"
+            style="color: lightgray"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="social-icon"
+            style="color: orangered"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://web.whatsapp.com/"
+            class="social-icon"
+            style="color: green"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </p>
+        <p>
+          &copy; 2024
+          <a href="index.html" style="color: lightblue">TRI-CriC</a>.All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="./static/css/js/script.js"></script>
+</html>

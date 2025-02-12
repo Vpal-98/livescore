@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICC Cricket Rankings</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/rankings.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container5">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/Screenshot (39).png" />
+          </a>
+        </div>
+        <nav class="navbar1">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">Live Scores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dropdown1">
+              <li class="dropbtn1" style="color: cadetblue">
+                <strong>more &#x25BE;</strong>
+                <div class="dropdown-content1">
+                  <a href="ipl.html">League Teams</a>
+                  <a href="#Points table">Points Table</a>
+                  <a href="series All.html">Series</a>
+                  <a href="Gallaries.html">Gallaries</a>
+                  <a href="#Matches.html">Matches</a>
+                  <!-- <a href="#Highlights.html">Highlights</a> -->
+                </div>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <div class="search-container5">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </div>
+        <div id="hamburger-icon1" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">livescores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="ranking-container">
+        <h2>ICC Cricket Rankings - Men's Batting</h2>
+
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-tabs mb-3 justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="rankings.html">Batting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bowling_test.html">Bowling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="allrounder_test.html">All-rounders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Teams_Test.html">Teams</a>
+          </li>
+        </ul>
+
+        <!-- Format Selection Buttons -->
+        <div class="format-buttons text-center mb-3">
+          <a href="rankings.html"
+            ><button class="btn btn-success">TEST</button></a
+          >
+          <a href="ODI.html"><button class="btn btn-secondary">ODI</button></a>
+          <a href="T20btn.html"
+            ><button class="btn btn-secondary">T20</button></a
+          >
+        </div>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Player</th>
+              <th>Country</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="player-cell">
+                <img src="img/head.jpg" class="player-img" />
+                <span class="player-name">Travis Head</span>
+              </td>
+              <td>AUSTRALIA</td>
+              <td>855</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="player-cell">
+                <img src="img/phil salt.jfif" class="player-img" />
+                <span class="player-name">Philip Salt</span>
+              </td>
+              <td>ENGLAND</td>
+              <td>829</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="player-cell">
+                <img src="img/" class="player-img" />
+                <span class="player-name">Tilak Varma</span>
+              </td>
+              <td>INDIA</td>
+              <td>806</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="player-cell">
+                <img src="img/" class="player-img" />
+                <span class="player-name">Suryakumar Yadav</span>
+              </td>
+              <td>India</td>
+              <td>788</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="player-cell">
+                <img src="img/josh.webp" class="player-img" />
+                <span class="player-name">Jos Buttler</span>
+              </td>
+              <td>ENGLAND</td>
+              <td>717</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td class="player-cell">
+                <img src="img/babar.webp" class="player-img" />
+                <span class="player-name">Babar Azam</span>
+              </td>
+              <td>PAKISTAN</td>
+              <td>712</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td class="player-cell">
+                <img src="img/" class="player-img" />
+                <span class="player-name">Pathum Nissanka</span>
+              </td>
+              <td>SRI LANKA</td>
+              <td>707</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td class="player-cell">
+                <img src="img/jaiswal.webp" class="player-img" />
+                <span class="player-name">Yashasvi Jaiswal</span>
+              </td>
+              <td>INDIA</td>
+              <td>706</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td class="player-cell">
+                <img src="img/" class="player-img" />
+                <span class="player-name">Mohammad Rizwan</span>
+              </td>
+              <td>PAKISTAN</td>
+              <td>704</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td class="player-cell">
+                <img src="img/" class="player-img" />
+                <span class="player-name">Kusal Perera</span>
+              </td>
+              <td>SRI LANKA</td>
+              <td>675</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td class="player-cell">
+                <img src="img/" class="player-img" />
+                <span class="player-name">Reeza Hendricks</span>
+              </td>
+              <td>SOUTH AFRICA</td>
+              <td>672</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td class="player-cell">
+                <img src="img/" class="player-img" />
+                <span class="player-name">Kusal Mendis</span>
+              </td>
+              <td>SRI LANKA</td>
+              <td>624</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td class="player-cell">
+                <img src="img/Josh-Inglis.jpg" class="player-img" />
+                <span class="player-name">Josh Inglis</span>
+              </td>
+              <td>AUSTRALIA</td>
+              <td>624</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td class="player-cell">
+                <img src="img/" class="player-img" />
+                <span class="player-name">Ruturaj Gaikwad</span>
+              </td>
+              <td>INDIA</td>
+              <td>620</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td class="player-cell">
+                <img src="img/" class="player-img" />
+                <span class="player-name">Rahmanullah Gurbaz</span>
+              </td>
+              <td>AFGHANISTAN</td>
+              <td>611</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="livescores.html">Live Scores</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="index.html"
+          ><img
+            src="img/Screenshot (39).png"
+            alt="Footer Logo"
+            id="footer-logo"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <p>
+          Follow us on <br /><br />
+          <a
+            href="https://www.facebook.com/?_rdr"
+            class="social-icon"
+            style="color: #3b5998"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://x.com/i/flow/login"
+            class="social-icon"
+            style="color: lightgray"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="social-icon"
+            style="color: orangered"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://web.whatsapp.com/"
+            class="social-icon"
+            style="color: green"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </p>
+        <p>
+          &copy; 2024<a href="index.html" style="color: aliceblue">TRI-CriC</a
+          >.All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="icon" href="img/Screenshot (39).png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+      }
+
+      header {
+        background-color: lightgray;
+        color: white;
+        padding: 10px 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .logo img {
+        height: 50px;
+      }
+      .logo img:hover {
+        background-color: aliceblue;
+      }
+
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .navbar ul li {
+        margin-left: 35px;
+        position: relative;
+      }
+
+      .navbar ul li a {
+        text-decoration: palegoldenrod;
+        color: cadetblue;
+        font-weight: bold;
+      }
+
+      .navbar ul li a:hover {
+        text-decoration: palegoldenrod;
+        color: black;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        min-width: 300px;
+        z-index: 1;
+        left: 0;
+      }
+
+      .dropdown-content li {
+        margin: 0;
+      }
+
+      .dropdown-content a {
+        color: cadetblue;
+        text-decoration: none;
+        display: block;
+        padding: 8px 16px;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        color: black;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .search-container {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+      }
+
+      .search-container input {
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+
+      .search-container button {
+        padding: 6px 10px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+
+      .search-container button:hover {
+        background-color: #45a049;
+      }
+      /* Container for both form and iframe */
+      .container-ct {
+        display: flex; /* Flexbox for side-by-side layout */
+        justify-content: space-between; /* Space between form and iframe */
+        gap: 20px; /* Space between the form and iframe */
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+
+      /* Form container */
+      .contact-container {
+        flex: 1; /* Take up 1 part of the space */
+        max-width: 550px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+
+      .button-container {
+        text-align: center;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Iframe container */
+      .iframe-container {
+        flex: 1; /* Take up 1 part of the space */
+        margin-top: 120px;
+        max-width: 550px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 450px;
+        border: 0;
+        border-radius: 10px;
+      }
+
+      footer {
+        background-color: #222;
+        color: white;
+        padding: 40px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+      footer div {
+        margin: 10px 0;
+      }
+      footer h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #ff6347;
+      }
+      footer ul {
+        list-style: none;
+        padding: 0;
+      }
+      footer ul li {
+        margin-bottom: 8px;
+      }
+      footer ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+      footer ul li a:hover {
+        color: #ff6347;
+      }
+      #footer-logo {
+        max-width: 150px;
+      }
+      .footer-container {
+        text-align: center;
+      }
+      .social-icon {
+        margin: 0 10px;
+        font-size: 20px;
+        text-decoration: none;
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+      .social-icon:hover {
+        transform: scale(1.2);
+        color: #ff6347;
+      }
+      .footer-container p {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #ccc;
+      }
+      .footer-container a {
+        color: lightblue;
+        text-decoration: none;
+      }
+      .footer-container a:hover {
+        color: #ff6347;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        footer {
+          flex-direction: column;
+          text-align: center;
+        }
+        #footer-logo {
+          margin: 20px 0;
+        }
+      }
+
+      @media (max-width: 768px) {
+        header .navbar ul {
+          flex-direction: column;
+        }
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      #hamburger-icon {
+        margin: auto 0;
+        display: none;
+        cursor: pointer;
+        align-items: center;
+      }
+
+      #hamburger-icon div {
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        margin: 2px 0;
+        transition: 0.4s;
+      }
+
+      .open .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
+      }
+
+      .open .bar2 {
+        opacity: 0;
+      }
+
+      .open .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -8px);
+        transform: rotate(45deg) translate(-6px, -8px);
+      }
+
+      .open .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        /* height: calc(100vh - 50px); */
+        width: 100%;
+        background-color: lightgray;
+      }
+
+      .mobile-menu li {
+        margin-bottom: 10px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        header nav {
+          display: none;
+        }
+
+        #hamburger-icon {
+          display: block;
+          position: center;
+        }
+      }
+
+      /* @media (max-width: 768px){} */
+
+      #hamburger-icon {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+      }
+
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+      }
+
+      /* Mobile Menu */
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .mobile-menu li {
+        margin: 7px 0;
+      }
+
+      .mobile-menu li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        transition: color 0.3s ease;
+      }
+
+      .mobile-menu li a:hover {
+        color: #f39c12;
+      }
+
+      /* Hamburger Active State */
+      #hamburger-icon.active .bar1 {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      #hamburger-icon.active .bar2 {
+        opacity: 0;
+      }
+
+      #hamburger-icon.active .bar3 {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+
+      /* Mobile Menu Active */
+      .mobile-menu.active {
+        display: flex;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .desktop-menu {
+          display: none;
+        }
+
+        #hamburger-icon {
+          display: flex;
+        }
+      }
+
+      /* Add this to your CSS */
+      @media (max-width: 768px) {
+        .container-ct {
+          flex-direction: column; /* Stack items vertically */
+          align-items: center; /* Center items horizontally */
+        }
+
+        .contact-container,
+        .iframe-container {
+          max-width: 100%; /* Full width on mobile */
+        }
+
+        .iframe-container {
+          margin-top: 20px; /* Add space between form and iframe */
+        }
+      }
+
+      /* Responsive Styles for Mobile */
+      @media (max-width: 768px) {
+        .search-container {
+          align-items: stretch;
+        }
+
+        .search-container input,
+        .search-container button {
+          width: 100%; /* Take full width on smaller screens */
+          font-size: 12px; /* Reduce font size */
+        }
+
+        .search-container button {
+          margin-top: 5px; /* Add spacing between input and button */
+          width: 100px;
+          border-radius: 30px;
+        }
+      }
+
+      /* #footer-logo:hover {
+  background-color: white;
+  cursor: pointer;
+} */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/Screenshot (39).png" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">Live Scores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dropdown">
+              <li class="dropbtn" style="color: cadetblue">
+                <strong>more &#x25BE;</strong>
+                <div class="dropdown-content">
+                  <a href="ipl.html">League Teams</a>
+                  <a href="points_table.html">Points Table</a>
+                  <a href="series All.html">Series</a>
+                  <a href="Gallaries.html">Gallaries</a>
+                  <a href="#Matches.html">Matches</a>
+                  <!-- <a href="#Highlights.html">Highlights</a> -->
+                </div>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">livescores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container-ct">
+      <!-- Contact Form Section -->
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="query-type">Query Type:</label>
+            <select id="query-type" name="query_type" required>
+              <option value="">Select Query Type</option>
+              <option value="live_scores">Live Scores</option>
+              <option value="team_inquiry">Team Inquiry</option>
+              <option value="schedule_request">Schedule Request</option>
+              <option value="general_feedback">General Feedback</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+          </div>
+          <div class="button-container">
+            <button type="submit">Submit</button>
+            <button type="Remove">Reset</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Google Map Section -->
+      <div class="iframe-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30148.053934470398!2d72.83907304501344!3d19.17305702720951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6f5d5ee3363%3A0x82d69cd9d25d5d2b!2sArabic%20IT%20Media%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1732864093960!5m2!1sen!2sin"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="livescores.html">Live Scores</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="index.html"
+          ><img
+            src="img/Screenshot (39).png"
+            alt="Footer Logo"
+            id="footer-logo"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <p>
+          Follow us on <br /><br />
+          <a
+            href="https://www.facebook.com/?_rdr"
+            class="social-icon"
+            style="color: #3b5998"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://x.com/i/flow/login"
+            class="social-icon"
+            style="color: lightgray"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="social-icon"
+            style="color: orangered"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://web.whatsapp.com/"
+            class="social-icon"
+            style="color: green"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </p>
+        <p>
+          &copy; 2024<a href="index.html" style="color: aliceblue">TRI-CriC</a
+          >.All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

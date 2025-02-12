@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scorecard</title>
+<style>
+        .scorecard {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.match-details h2 {
+    color: #2c3e50;
+}
+
+h3 {
+    color: #3498db;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+</style>
+</head>
+<body>
+    <div class="scorecard">
+        <div class="match-details">
+            <h2>India vs SA</h2>
+            <p><strong>Venue:</strong> Cape-Town, SA</p>
+            <p><strong>Date:</strong> 30<sup>th</sup> December 2024</p>
+            <p><strong>Weather:</strong> Clear skies, 28°C</p>
+            <p><strong>Toss:</strong> India won the toss and chose to bat</p>
+        </div>
+    
+        <div class="team-stats">
+            <h3>Team India</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Runs</th>
+                        <th>Balls</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                        <th>SR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rohit Sharma</td>
+                        <td>30</td>
+                        <td>26</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>110.4</td>
+                    </tr>
+                    <tr>
+                        <td>Virat Kohli</td>
+                        <td>32</td>
+                        <td>29</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>108.5</td>
+                    </tr>
+                    <!-- More players... -->
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="bowling-stats">
+            <h3>Bowling Stats</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Overs</th>
+                        <th>Runs</th>
+                        <th>Wickets</th>
+                        <th>ER</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> jasprit Bumrah</td>
+                        <td>9</td>
+                        <td>35</td>
+                        <td>5</td>
+                        <td>3.83</td>
+                    </tr>
+                    <tr>
+                        <td>Bhuvi</td>
+                        <td>6</td>
+                        <td>30</td>
+                        <td>3</td>
+                        <td>5.00</td>
+                    </tr>
+                    <!-- More bowlers... -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

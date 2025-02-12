@@ -1,0 +1,850 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+header {
+    background-color:lightgray;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  .logo img:hover{
+    background-color: aliceblue;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 35px;
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration:palegoldenrod;
+    color:cadetblue;
+    font-weight: bold;
+  }
+  
+  .navbar ul li a:hover {
+    text-decoration:palegoldenrod;
+    color: black;
+  }
+  
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content a {
+    color: cadetblue;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .search-container input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-container button {
+    padding: 6px 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .search-container button:hover {
+    background-color: #45a049;
+  }
+
+  .container1 {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto; /* This centers the box horizontally */
+}
+
+.h1 {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.tabs button {
+    background-color: #e7e7e7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.tabs button:hover {
+    background-color: #d4d4d4;
+}
+
+.tabs button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.schedule {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.schedule .date {
+    background-color: #e0f7fa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.match-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    flex-wrap: wrap; /* Ensures proper word wrapping */
+}
+
+.match-details {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0; /* Adjusted for proper spacing */
+    flex: 1 1 100%; /* Ensures full width in smaller screens */
+}
+
+.time {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .match-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .time {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+  footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div {
+    margin: 10px 0;
+}
+footer h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin-bottom: 8px;
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+footer ul li a:hover {
+    color: #ff6347;
+}
+#footer-logo {
+    max-width: 150px;
+}
+.footer-container {
+    text-align: center;
+}
+.social-icon {
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #ff6347;
+}
+.footer-container p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+.footer-container a {
+    color: lightblue;
+    text-decoration: none;
+}
+.footer-container a:hover {
+    color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    #footer-logo {
+        margin: 20px 0;
+    }
+}
+    /* #footer-logo:hover {
+    background-color: white;
+    cursor: pointer;
+    } */
+
+
+    /* @media (max-width: 768px) {
+      header .navbar ul {
+          flex-direction: column;
+      }
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #hamburger-icon {
+      margin: auto 0;
+      display: none;
+      cursor: pointer;
+      align-items: center;
+    }
+    
+    #hamburger-icon div {
+      width: 35px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    
+    .open .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    
+    .open .bar2 {
+      opacity: 0;
+    }
+    
+    .open .bar3 {
+      -webkit-transform: rotate(45deg) translate(-6px, -8px);
+      transform: rotate(45deg) translate(-6px, -8px);
+    }
+    
+    .open .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      height: calc(100vh - 50px); 
+      width: 100%;
+      background-color: lightgray
+    }
+    
+    .mobile-menu li {
+      margin-bottom: 10px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      header nav {
+        display: none;
+      }
+    
+      #hamburger-icon {
+        display: block;
+        position: center;
+      }
+    }
+    .error-message {
+      color: red;
+      font-size: 12px;
+  } */
+
+
+
+  
+  @media (max-width: 768px) {
+    header .navbar ul {
+        flex-direction: column;
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+     #hamburger-icon {
+      margin: auto 0;
+      display: none;
+      cursor: pointer;
+      align-items: center;
+    }
+    
+    #hamburger-icon div {
+      width: 35px;
+      height: 3px;
+      background-color: white;
+      margin: 2px 0;
+      transition: 0.4s;
+    }
+    
+    .open .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    
+    .open .bar2 {
+      opacity: 0;
+    }
+    
+    .open .bar3 {
+      -webkit-transform: rotate(45deg) translate(-6px, -8px);
+      transform: rotate(45deg) translate(-6px, -8px);
+    }
+    
+    .open .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      /* height: calc(100vh - 50px); */
+      width: 100%;
+      background-color: lightgray
+    }
+    
+    .mobile-menu li {
+      margin-bottom: 10px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      header nav {
+        display: none;
+      }
+    
+      #hamburger-icon {
+        display: block;
+        position: center;
+      }
+    }
+  
+    /* @media (max-width: 768px){} */
+   
+    #hamburger-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+    
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      transition: all 0.3s ease;
+    }
+    
+    /* Mobile Menu */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      list-style: none;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 10px;
+      width: 200px;
+      border-radius: 5px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .mobile-menu li {
+      margin: 6px 0;
+    }
+    
+    .mobile-menu li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      text-align: center;
+      display: block;
+      transition: color 0.3s ease;
+    }
+    
+    .mobile-menu li a:hover {
+      color: #f39c12;
+    }
+    
+    /* Hamburger Active State */
+    #hamburger-icon.active .bar1 {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    #hamburger-icon.active .bar2 {
+      opacity: 0;
+    }
+    
+    #hamburger-icon.active .bar3 {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    /* Mobile Menu Active */
+    .mobile-menu.active {
+      display: flex;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .desktop-menu {
+        display: none;
+      }
+    
+      #hamburger-icon {
+        display: flex;
+      }
+    }
+  
+
+    /* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .search-container {
+    
+    align-items: stretch;
+  }
+
+  .search-container input, .search-container button {
+    width: 100%; /* Take full width on smaller screens */
+    font-size: 12px; /* Reduce font size */
+    
+  }
+
+  .search-container button {
+    margin-top: 5px; /* Add spacing between input and button */
+    width: 100px;
+    border-radius: 30px;  
+  }
+}
+/* domestic & others pages effects */
+
+.match-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.date-day {
+  background-color: #d6d6d6; /* Gray background */
+  color: #333;
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+}
+.tournament-name {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 16px;
+  text-align: left;
+  padding: 15px;
+}
+.details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.match-details {
+  text-align: center;
+  flex-grow: 2;
+}
+.match-details h6 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal; /* Normal weight for heading */
+}
+.match-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #6c757d;
+}
+.time-info {
+  text-align: right;
+  font-size: 14px;
+  color: #6c757d;
+}
+.line {
+  border-top: 2px solid #ddd; /* Thicker line */
+  width: 70%; /* Wider line (70%) */
+  margin-left: auto;
+  margin-top: 15px;
+}
+@media (max-width: 768px) {
+  .details-container {
+      flex-direction: column;
+      text-align: center;
+  }
+  .tournament-name {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  .time-info {
+      margin-top: 10px;
+      text-align: center;
+  }
+}
+
+
+/* t20 leagues styles */
+
+.match-card1 {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Keeps the container centered */
+  text-align: center; /* Centers text by default */
+}
+
+.date-day {
+  background-color: #d6d6d6;
+  color: #333;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left; /* Aligns the date to the left */
+  width: 100%; /* Ensures the date takes up full width */
+}
+
+.tournament-name1 {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.details-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.match-details1 {
+  text-align: left;
+  flex: 1;
+}
+
+.match-details1 h6 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.match-details1 p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.time-info1 {
+  font-size: 14px;
+  color: #6c757d;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.line1 {
+  border-top: 2px solid #ddd;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .details-container1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .time-info1 {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+
+/* womens styles */
+ /* .details-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+}  */
+
+
+ .schedule-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} 
+.schedule-date1 {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-left: 4px solid #007bff;
+  border-radius: 5px;
+}
+.schedule-item > div {
+  margin-right: 10px;
+}
+.bold-line {
+  font-weight: bold;
+  color: #333;
+}
+.left-column {
+  flex: 1;
+  text-align: left;
+}
+.center-column {
+  flex: 2;
+  text-align: center;
+}
+.right-column {
+  flex: 1;
+  text-align: right;
+  color: #555;
+}
+.schedule-gap {
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-item {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .left-column,
+  .center-column,
+  .right-column {
+      padding: 0;
+  }
+}
+
+/* All matches styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container4 {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Date Header */
+.date-header {
+  background-color: #e9ecef;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #495057;
+  text-align: left;
+}
+
+/* Match Container */
+.match {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px; /* Increased gap between matches */
+}
+
+/* Left Section for League Info */
+.match-info-left {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000; /* Changed to black */
+}
+
+/* Center Section for Teams and Venue */
+.match-info-center {
+  flex: 2;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal; /* Removed bold style */
+  color: #6c757d; /* Changed to gray */
+}
+
+/* Right Section for Time */
+.match-time {
+  flex: 1;
+  text-align: right;
+  font-size: 16px;
+  color: grey;
+}
+
+/* Half-width line above the 2nd match */
+.half-line {
+  width: 72%;
+  height: 1px;
+  background-color: grey;
+  margin: 10px 330px;
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams Squads</title>
+    <style>
+    /* Main Content */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #fff;
+            margin: 0 5%; /* Side margins for the page */
+        }
+
+        .squads-section {
+            margin-top: 50px; /* Add space below the heading */
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .squads-section h1 {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            margin: 20px 0; /* Space above and below the heading */
+            padding-top: 30px; /* Add padding from the top of the page */
+        }
+
+        .team-squad {
+            width: 48%;
+        }
+
+        .team-squad h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .team-squad h2 img {
+            margin-left: 10px;
+            height: 30px;
+        }
+
+        .squad-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+        }
+
+        .squad-member {
+            background-color: #fff;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            width: 100px;
+        }
+
+        .squad-member img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .squad-member p {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .squad-member:hover {
+            transform: scale(1.05);
+            border-color: #ff6347;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .squads-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-squad {
+                width: 100%; /* Full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <section class="squads-section">
+            <h1 style="text-align: center;">BGT Trophy Squads</h1>
+            
+            <!-- Indian Squad -->
+            <div class="team-squad">
+                <h2>India Squads
+                    <img src="img/India flag.jpg" style="height: 35px;">
+                </h2>
+                <div class="squad-list">
+                    <div class="squad-member">
+                        <img src="img/rohit.jpg" alt="Rohit Sharma">
+                        <p>Rohit Sharma (C)</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/Ivk.jpg" alt="Virat Kohli">
+                        <p>Virat Kohli</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/kl1.webp" alt="KL Rahul">
+                        <p>KL Rahul</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/gill.avif" alt="Shubman Gill">
+                        <p>Shubman Gill</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/jaiswal.webp" alt="Ajinkya Rahane">
+                        <p>Yashaswi Jaiswal</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/reddy.jpg" alt="Ajinkya Rahane">
+                        <p>Nitiesh Reddy </p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/jadeja.jpg" alt="Ajinkya Rahane">
+                        <p>Ravindra jadeja</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/ashwin.jpg" alt="Ajinkya Rahane">
+                        <p>Ravichandran Ashwin</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/paddikkal.jpg" alt="Ajinkya Rahane">
+                        <p>Devdutt Padikkal</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/rishabh-pant-1.webp" alt="Ajinkya Rahane">
+                        <p>Rishabh Pant</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/sarfaraz.jpg" alt="Ajinkya Rahane">
+                        <p>Sarfaraz Khan</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/bumrah.jpg" alt="Ajinkya Rahane">
+                        <p>Jasprit Bumrah</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/Prasidh_Krishna_0.webp" alt="Ajinkya Rahane">
+                        <p>Prasidh Krishna</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/siraj.jpg" alt="Ajinkya Rahane">
+                        <p>Md.Siraj</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/rana.jpg" alt="Ajinkya Rahane">
+                        <p>Harshit Rana</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/akash.jpg" alt="Ajinkya Rahane">
+                        <p>Akash Deep</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/abhi.webp" alt="Ajinkya Rahane">
+                        <p>Abhimanyu Easwaran</p>
+                    </div>
+                    <!-- Add other players similarly -->
+                </div>
+            </div>
+            <hr>
+            <!-- Australian Squad -->
+            <div class="team-squad">
+                <h2>Australia Squads
+                    <img src="img/Flag_of_Australia.webp" style="height: 35px;">
+                </h2>
+                <div class="squad-list">
+                    <div class="squad-member">
+                        <img src="img/pat.jpg" alt="Pat Cummins">
+                        <p>Pat Cummins (C)</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/alex.jpg" alt="David Warner">
+                        <p>Alex carry (WK)</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/smith.jpg" alt="Steven Smith">
+                        <p>Steven Smith</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/marnus-labuschagne.webp" alt="Marnus Labuschagne">
+                        <p>Marnus Labuschagne</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/head.jpg" alt="Cameron Green">
+                        <p>Travis Head</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/doggett.png" alt="Cameron Green">
+                        <p>Brendan Doggett</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/boland.webp" alt="Cameron Green">
+                        <p>Stock Boland</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/Josh-Inglis.jpg" alt="Cameron Green">
+                        <p>Josh Inglish</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/webster.jpg" alt="Cameron Green">
+                        <p>Beau Webster</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/marsh.webp" alt="Cameron Green">
+                        <p>Mitchell Marsh</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/lyon.jpg" alt="Cameron Green">
+                        <p>Nathan Lyon</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/hazelwood.jpg" alt="Cameron Green">
+                        <p>Josh Hazelwood</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/starc.jpg" alt="Cameron Green">
+                        <p>Mitchell Starc</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/usman-khawaja.avif" alt="Cameron Green">
+                        <p>Usman Khawaja</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/NATHAN-MCSWEENEY.webp" alt="Cameron Green">
+                        <p>Nathan McSweeney</p>
+                    </div>
+                    <div class="squad-member">
+                        <img src="img/sean-abbott.avif" alt="Cameron Green">
+                        <p>Sean Abbott</p>
+                    </div>
+                    <!-- Add other players similarly -->
+                </div>
+            </div>
+        </section>
+    </main>    
+</body>
+</html>

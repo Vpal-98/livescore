@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Latest News Section */
+.latest-news {
+  padding: 2rem;
+  max-width: 80%;
+  margin: 2rem auto;
+  
+}
+
+.latest-news h2 {
+  font-size: 1.6rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.latest-news article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.latest-news article img {
+  width: 315px;
+  height: 200px;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.latest-news article h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.latest-news article p {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: justify;
+}
+
+.latest-news article a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.latest-news article a:hover {
+  color: #0056b3;
+}
+.Ipl {
+  text-align: center; /* Centers the content */
+  margin: 20px;
+}
+
+.Ipl img {
+  width: 75%; /* Makes the image take up the full width of the container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container area without stretching */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.Ipl h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.Ipl p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table th, table td {
+  padding: 12px;
+  text-align: left;
+ }
+
+table th {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+}
+
+table td {
+  background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+table td {
+  color: #333;
+  font-size: 1rem;
+}
+
+table td:first-child {
+  font-weight: bold;
+}
+
+table td:hover {
+  background-color: #e2e2e2;
+}
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div {
+    margin: 10px 0;
+}
+footer h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin-bottom: 8px;
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+footer ul li a:hover {
+    color: #ff6347;
+}
+#footer-logo {
+    max-width: 150px;
+}
+.footer-container {
+    text-align: center;
+}
+.social-icon {
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #ff6347;
+}
+.footer-container p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+.footer-container a {
+    color: lightblue;
+    text-decoration: none;
+}
+.footer-container a:hover {
+    color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    #footer-logo {
+        margin: 20px 0;
+    }
+}
+
+  /* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .latest-news article {
+    display: block; /* Stacks content vertically */
+    text-align: center;
+  }
+
+  .latest-news article img {
+    margin: 0 auto; /* Centers the image */
+    margin-bottom: 1rem; /* Adds space between image and text */
+  }
+
+  .latest-news article h3, .latest-news article p {
+    text-align: center; /* Centers text for better readability */
+  }
+  
+            table, th, td {
+                display: block;
+            }
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: bold;
+            }
+            /* td:nth-of-type(1)::before { content: "Buying Team"; }
+            td:nth-of-type(2)::before { content: "Player"; }
+            td:nth-of-type(3)::before { content: "Base Price"; }
+            td:nth-of-type(4)::before { content: "Sold Price"; } */
+}
+
+
+       
+
+  /* #footer-logo:hover {
+  background-color: white;
+  cursor: pointer;
+  } */
+    </style>
+</head>
+<body>
+    <section class="latest-news">
+        <h2>Latest Cricket News</h2>
+        <article>
+          <img src="img/msd.jpg" alt="News 1">
+          <h3>MS Dhoni Opens Up on Retirement Plans</h3>
+          <p>MS Dhoni shares his thoughts on his illustrious career and what lies ahead. <a href="latest news.html"></a></p>
+        </article>
+        <article>
+          <img src="img/vk.jpg" alt="News 2">
+          <h3>Virat Kohli's Century Propels India to Victory</h3>
+          <p>A masterclass performance from Kohli leads India to an emphatic win. <a href="latest news.html"></a></p>
+        </article>
+        <article>
+            <img src="img/test.avif" alt="test centuries" title="vk 30th done">
+            <h3>Virat kohli peaked has there 30<sup>th</sup> centuries done in Australiya</h3>
+            <p>His unbeaten 100 against Pat Cummins and his men during the first Test at Perth's Optus Stadium, 
+                was posted after openers Yashasvi Jaiswal and K.L. Rahul laid a firm base. 
+                Yet, these were runs that had to be earned against mighty Australian bowlers.</p>
+        </article>
+        <article>
+            <img src="img/rishabh-pant-1.webp" alt="rishabh pant" title="rp">
+            <h3>Lucknow Super Giants (LSG) made waves at the IPL 2025 mega auction</h3>
+            <p>Rishabh Pant has become the most expensive player in IPL history, 
+                breaking Shreyas Iyer's record within minutes.
+                He was acquired by the Lucknow team for 27 crore.</p>
+        </article>
+        <div class="Ipl">
+            <img src="img/ipl.webp" alt="ipl" title="|India Premier League">
+            <h3>All teams mega Auctions Lists</h3>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Buying Team</th>
+                        <th>Player</th>
+                        <th>Base Price</th>
+                        <th>Sold Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Noor Ahmad</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹10,00,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Ravichandaran Ashwin</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹9,75,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Devon Conway</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹6,25,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Syed Khaleel Ahmed</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹4,80,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Rachin Ravindra</td>
+                        <td>₹1,50,00,000</td>
+                        <td>₹4,00,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Anshul Kamboj</td>
+                        <td>₹30,00,000</td>
+                        <td>₹3,40,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Rahul Tripathi</td>
+                        <td>₹75,00,000</td>
+                        <td>₹3,40,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Sam Curran</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹2,40,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Gurjapneet Singh</td>
+                        <td>₹30,00,000</td>
+                        <td>₹2,20,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Nathan Ellis</td>
+                        <td>₹1,25,00,000</td>
+                        <td>₹2,00,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Deepak Hooda</td>
+                        <td>₹75,00,000</td>
+                        <td>₹1,70,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Jamie Overton</td>
+                        <td>₹1,50,00,000</td>
+                        <td>₹1,50,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Vijay Shankar</td>
+                        <td>₹30,00,000</td>
+                        <td>₹1,20,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Vansh Bedi</td>
+                        <td>₹30,00,000</td>
+                        <td>₹55,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Andre Siddarth</td>
+                        <td>₹30,00,000</td>
+                        <td>₹30,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Shreyas Gopal</td>
+                        <td>₹30,00,000</td>
+                        <td>₹30,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Ramakrishna Ghosh</td>
+                        <td>₹30,00,000</td>
+                        <td>₹30,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Kamlesh Nagarkoti</td>
+                        <td>₹30,00,000</td>
+                        <td>₹30,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Mukesh Choudhary</td>
+                        <td>₹30,00,000</td>
+                        <td>₹30,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings</td>
+                        <td>Shaik Rasheed</td>
+                        <td>₹30,00,000</td>
+                        <td>₹30,00,000</td>
+                    </tr>
+                </tbody>
+            </table><br><br><br><br><br>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Buying Team</th>
+                        <th>Player</th>
+                        <th>Base Price</th>
+                        <th>Sold Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>KL Rahul</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹14,00,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Mitchell Starc</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹11,75,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>T. Natarajan</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹10,75,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Jake Fraser-Mcgurk</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹9,00,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Mukesh Kumar</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹8,00,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Harry Brook</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹6,25,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Ashutosh Sharma</td>
+                        <td>₹30,00,000</td>
+                        <td>₹3,80,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Mohit Sharma</td>
+                        <td>₹50,00,000</td>
+                        <td>₹2,20,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Faf Du Plessis</td>
+                        <td>₹2,00,00,000</td>
+                        <td>₹2,00,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Sameer Rizvi</td>
+                        <td>₹30,00,000</td>
+                        <td>₹95,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Donovan Ferreira</td>
+                        <td>₹75,00,000</td>
+                        <td>₹75,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Dushmantha Chameera</td>
+                        <td>₹75,00,000</td>
+                        <td>₹75,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Vipraj Nigam</td>
+                        <td>₹30,00,000</td>
+                        <td>₹50,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Karun Nair</td>
+                        <td>₹30,00,000</td>
+                        <td>₹50,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Madhav Tiwari</td>
+                        <td>₹30,00,000</td>
+                        <td>₹40,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Tripurana Vijay</td>
+                        <td>₹30,00,000</td>
+                        <td>₹30,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Manvanth Kumar L</td>
+                        <td>₹30,00,000</td>
+                        <td>₹30,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Ajay Mandal</td>
+                        <td>₹30,00,000</td>
+                        <td>₹30,00,000</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals</td>
+                        <td>Darshan Nalkande</td>
+                        <td>₹30,00,000</td>
+                        <td>₹30,00,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br><br>
+            <h3>IPL 2025 Players Retained by Teams</h3>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Team</th>
+                        <th>Player Name</th>
+                        <th>Price (₹ Crore)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Punjab Kings (PBKS)</td>
+                        <td>Shashank Singh</td>
+                        <td>₹5.5</td>
+                    </tr>
+                    <tr>
+                        <td>Punjab Kings (PBKS)</td>
+                        <td>Prabhsimran Singh</td>
+                        <td>₹4</td>
+                    </tr>
+                    <tr>
+                        <td>Lucknow Super Giants (LSG)</td>
+                        <td>Nicholas Pooran</td>
+                        <td>₹21</td>
+                    </tr>
+                    <tr>
+                        <td>Lucknow Super Giants (LSG)</td>
+                        <td>Ravi Bishnoi</td>
+                        <td>₹11</td>
+                    </tr>
+                    <tr>
+                        <td>Lucknow Super Giants (LSG)</td>
+                        <td>Mayank Yadav</td>
+                        <td>₹11</td>
+                    </tr>
+                    <tr>
+                        <td>Lucknow Super Giants (LSG)</td>
+                        <td>Mohsin Khan</td>
+                        <td>₹4</td>
+                    </tr>
+                    <tr>
+                        <td>Lucknow Super Giants (LSG)</td>
+                        <td>Ayush Badoni</td>
+                        <td>₹4</td>
+                    </tr>
+                    <tr>
+                        <td>Gujarat Titans (GT)</td>
+                        <td>Rashid Khan</td>
+                        <td>₹18</td>
+                    </tr>
+                    <tr>
+                        <td>Gujarat Titans (GT)</td>
+                        <td>Shubman Gill</td>
+                        <td>₹16.5</td>
+                    </tr>
+                    <tr>
+                        <td>Gujarat Titans (GT)</td>
+                        <td>Sai Sudharsan</td>
+                        <td>₹8.5</td>
+                    </tr>
+                    <tr>
+                        <td>Gujarat Titans (GT)</td>
+                        <td>Rahul Tewatia</td>
+                        <td>₹4</td>
+                    </tr>
+                    <tr>
+                        <td>Gujarat Titans (GT)</td>
+                        <td>Shahrukh Khan</td>
+                        <td>₹4</td>
+                    </tr>
+                    <tr>
+                        <td>Rajasthan Royals (RR)</td>
+                        <td>Sanju Samson</td>
+                        <td>₹18</td>
+                    </tr>
+                    <tr>
+                        <td>Rajasthan Royals (RR)</td>
+                        <td>Yashasvi Jaiswal</td>
+                        <td>₹18</td>
+                    </tr>
+                    <tr>
+                        <td>Rajasthan Royals (RR)</td>
+                        <td>Riyan Parag</td>
+                        <td>₹14</td>
+                    </tr>
+                    <tr>
+                        <td>Rajasthan Royals (RR)</td>
+                        <td>Dhruv Jurel</td>
+                        <td>₹14</td>
+                    </tr>
+                    <tr>
+                        <td>Rajasthan Royals (RR)</td>
+                        <td>Shimron Hetmyer</td>
+                        <td>₹11</td>
+                    </tr>
+                    <tr>
+                        <td>Rajasthan Royals (RR)</td>
+                        <td>Sandeep Sharma</td>
+                        <td>₹4</td>
+                    </tr>
+                    <tr>
+                        <td>Kolkata Knight Riders (KKR)</td>
+                        <td>Rinku Singh</td>
+                        <td>₹13</td>
+                    </tr>
+                    <tr>
+                        <td>Kolkata Knight Riders (KKR)</td>
+                        <td>Varun Chakravarthy</td>
+                        <td>₹12</td>
+                    </tr>
+                    <tr>
+                        <td>Kolkata Knight Riders (KKR)</td>
+                        <td>Sunil Narine</td>
+                        <td>₹12</td>
+                    </tr>
+                    <tr>
+                        <td>Kolkata Knight Riders (KKR)</td>
+                        <td>Andre Russell</td>
+                        <td>₹12</td>
+                    </tr>
+                    <tr>
+                        <td>Kolkata Knight Riders (KKR)</td>
+                        <td>Harshit Rana</td>
+                        <td>₹4</td>
+                    </tr>
+                    <tr>
+                        <td>Kolkata Knight Riders (KKR)</td>
+                        <td>Ramandeep Singh</td>
+                        <td>₹4</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals (DC)</td>
+                        <td>Axar Patel</td>
+                        <td>₹16.5</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals (DC)</td>
+                        <td>Kuldeep Yadav</td>
+                        <td>₹13.25</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals (DC)</td>
+                        <td>Tristan Stubbs</td>
+                        <td>₹10</td>
+                    </tr>
+                    <tr>
+                        <td>Delhi Capitals (DC)</td>
+                        <td>Abhishek Porel</td>
+                        <td>₹4</td>
+                    </tr>
+                    <tr>
+                        <td>Sunrisers Hyderabad (SRH)</td>
+                        <td>Heinrich Klaasen</td>
+                        <td>₹23</td>
+                    </tr>
+                    <tr>
+                        <td>Sunrisers Hyderabad (SRH)</td>
+                        <td>Pat Cummins</td>
+                        <td>₹18</td>
+                    </tr>
+                    <tr>
+                        <td>Sunrisers Hyderabad (SRH)</td>
+                        <td>Abhishek Sharma</td>
+                        <td>₹14</td>
+                    </tr>
+                    <tr>
+                        <td>Sunrisers Hyderabad (SRH)</td>
+                        <td>Travis Head</td>
+                        <td>₹14</td>
+                    </tr>
+                    <tr>
+                        <td>Sunrisers Hyderabad (SRH)</td>
+                        <td>Nitish Kumar Reddy</td>
+                        <td>₹6</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings (CSK)</td>
+                        <td>Ruturaj Gaikwad</td>
+                        <td>₹18</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings (CSK)</td>
+                        <td>Ravindra Jadeja</td>
+                        <td>₹18</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings (CSK)</td>
+                        <td>Mathisha Pathirana</td>
+                        <td>₹13</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings (CSK)</td>
+                        <td>Shivam Dube</td>
+                        <td>₹12</td>
+                    </tr>
+                    <tr>
+                        <td>Chennai Super Kings (CSK)</td>
+                        <td>MS Dhoni</td>
+                        <td>₹4</td>
+                    </tr>
+                    <tr>
+                        <td>Royal Challengers Bangalore (RCB)</td>
+                        <td>Virat Kohli</td>
+                        <td>₹21</td>
+                    </tr>
+                    <tr>
+                        <td>Royal Challengers Bangalore (RCB)</td>
+                        <td>Rajat Patidar</td>
+                        <td>₹11</td>
+                    </tr>
+                    <tr>
+                        <td>Royal Challengers Bangalore (RCB)</td>
+                        <td>Yash Dayal</td>
+                        <td>₹5</td>
+                    </tr>
+                </tbody>
+            </table>
+      </div>
+</section>
+<footer>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="livescores.html">Live Scores</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+        <a href="index.html"><img src="img/Screenshot (39).png" alt="Footer Logo" id="footer-logo"></a>
+    </div>
+    <div class="footer-container">
+        <p>Follow us on <br><br>
+          <a href="https://www.facebook.com/?_rdr" class="social-icon" style="color: #3b5998;">
+            <i class="fab fa-facebook"></i> 
+          </a> 
+          <a href="https://x.com/i/flow/login" class="social-icon" style="color: lightgray;">
+            <i class="fab fa-twitter"></i>
+          </a> 
+          <a href="https://www.instagram.com/?hl=en" class="social-icon" style="color: orangered;">
+            <i class="fab fa-instagram"></i> 
+          </a> 
+          <a href="https://web.whatsapp.com/" class="social-icon" style="color: green;">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </p>
+        <p>&copy; 2024<a href="index.html" style="color: aliceblue;">TRI-CriC</a>.All Rights Reserved.</p>
+      </div>
+  </footer>
+</body>
+</html>

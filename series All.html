@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Scores</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="img/Screenshot (39).png" type="image/png" />
+    <link rel="stylesheet" href="./static/css/series.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/Screenshot (39).png" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">Live Scores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dropdown">
+              <li class="dropbtn" style="color: cadetblue">
+                <strong>more &#x25BE;</strong>
+                <div class="dropdown-content">
+                  <a href="ipl.html">League Teams</a>
+                  <a href="#Points table">Points Table</a>
+                  <a href="series All.html">Series</a>
+                  <a href="Gallaries.html">Gallaries</a>
+                  <a href="#Matches.html">Matches</a>
+                  <!-- <a href="#Highlights.html">Highlights</a> -->
+                </div>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">livescores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="schedule-container">
+      <div class="header">Present & Upcoming Series</div>
+
+      <div class="filter-buttons">
+        <a href="series All.html"><button>All</button></a>
+        <a href="international series.html"><button>International</button></a>
+        <a href="domestic series.html"><button>Domestic</button></a>
+        <a href="leagueseries.html"><button>T20 Leagues</button></a>
+        <a href="womenseries.html"><button>Women</button></a>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">February 2024</div>
+        <div class="series">
+          <div class="series-name">
+            ICC Cricket World Cup League Two 2023-27
+          </div>
+          <div class="series-dates">Feb 15 - Mar 30</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">September 2024</div>
+        <div class="series">
+          <div class="series-name">Australia Domestic One-Day Cup 2024-25</div>
+          <div class="series-dates">Sep 22 - Mar 01</div>
+        </div>
+        <div class="series">
+          <div class="series-name">ICC CWC Challenge League A, 2024-26</div>
+          <div class="series-dates">Sep 25 - Jan 29</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">October 2024</div>
+        <div class="series">
+          <div class="series-name">Sheffield Shield 2024-25</div>
+          <div class="series-dates">Oct 08 - Mar 30</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Ranji Trophy Elite 2024-25</div>
+          <div class="series-dates">Oct 11 - Mar 02</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Ranji Trophy Plate 2024-25</div>
+          <div class="series-dates">Oct 11 - Jan 27</div>
+        </div>
+        <div class="series">
+          <div class="series-name">The Ford Trophy 2024-25</div>
+          <div class="series-dates">Oct 20 - Mar 02</div>
+        </div>
+        <div class="series">
+          <div class="series-name">
+            CSA Four-Day Series Division One 2024-25
+          </div>
+          <div class="series-dates">Oct 30 - Apr 14</div>
+        </div>
+        <div class="series">
+          <div class="series-name">
+            CSA Four-Day Series Division Two 2024-25
+          </div>
+          <div class="series-dates">Oct 31 - Apr 06</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">November 2024</div>
+        <div class="series">
+          <div class="series-name">ICC CWC Challenge League B, 2024-26</div>
+          <div class="series-dates">Nov 06 - Jan 30</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Plunket Shield 2024-25</div>
+          <div class="series-dates">Nov 11 - Apr 01</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">December 2024</div>
+        <div class="series">
+          <div class="series-name">Big Bash League 2024-25</div>
+          <div class="series-dates">Dec 15 - Jan 27</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Vijay Hazare Trophy 2024-25</div>
+          <div class="series-dates">Dec 21 - Jan 18</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Sri Lanka tour of New Zealand, 2024-25</div>
+          <div class="series-dates">Dec 23 - Jan 11</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Super Smash 2024-25</div>
+          <div class="series-dates">Dec 26 - Feb 02</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Bangladesh Premier League, 2024-25</div>
+          <div class="series-dates">Dec 30 - Feb 07</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">January 2025</div>
+        <div class="series">
+          <div class="series-name">SA20, 2025</div>
+          <div class="series-dates">Jan 09 - Feb 08</div>
+        </div>
+        <div class="series">
+          <div class="series-name">West Indies tour of Pakistan, 2025</div>
+          <div class="series-dates">Jan 10 - Jan 28</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Ireland Women's tour of India, 2025</div>
+          <div class="series-dates">Jan 10 - Jan 15</div>
+        </div>
+        <div class="series">
+          <div class="series-name">International League T20, 2025</div>
+          <div class="series-dates">Jan 11 - Feb 09</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Women's Ashes, 2025</div>
+          <div class="series-dates">Jan 12 - Jan 30</div>
+        </div>
+        <div class="series">
+          <div class="series-name">
+            England Under 19 tour of South Africa, 2025
+          </div>
+          <div class="series-dates">Jan 17 - Feb 06</div>
+        </div>
+        <div class="series">
+          <div class="series-name">ICC Under 19 Women's T20 World Cup 2025</div>
+          <div class="series-dates">Jan 18 - Feb 02</div>
+        </div>
+        <div class="series">
+          <div class="series-name">
+            Bangladesh Women tour of West Indies, 2025
+          </div>
+          <div class="series-dates">Jan 19 - Jan 31</div>
+        </div>
+        <div class="series">
+          <div class="series-name">England tour of India, 2025</div>
+          <div class="series-dates">Jan 22 - Feb 12</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Australia tour of Sri Lanka, 2025</div>
+          <div class="series-dates">Jan 29 - Feb 13</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="livescores.html">Live Scores</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="index.html"
+          ><img
+            src="img/Screenshot (39).png"
+            alt="Footer Logo"
+            id="footer-logo"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <p>
+          Follow us on <br /><br />
+          <a
+            href="https://www.facebook.com/?_rdr"
+            class="social-icon"
+            style="color: #3b5998"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://x.com/i/flow/login"
+            class="social-icon"
+            style="color: lightgray"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="social-icon"
+            style="color: orangered"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://web.whatsapp.com/"
+            class="social-icon"
+            style="color: green"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </p>
+        <p>
+          &copy; 2024<a href="index.html" style="color: aliceblue">TRI-CriC</a
+          >.All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

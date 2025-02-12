@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICC Cricket Rankings</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f4f4f9;
+        font-family: "Arial", sans-serif;
+      }
+
+      .ranking-container {
+        max-width: 900px;
+        margin: 50px auto;
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Tab styling */
+      .nav-tabs {
+        border-bottom: 2px solid #e3e3e3;
+      }
+
+      .nav-tabs .nav-link {
+        color: #007bff;
+        font-weight: 500;
+      }
+
+      .nav-tabs .nav-link.active {
+        color: #0056b3;
+        font-weight: bold;
+        border-bottom: 2px solid #0056b3;
+      }
+
+      /* Table styling */
+      table {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        border-collapse: collapse;
+      }
+
+      table th,
+      table td {
+        padding: 12px 15px;
+        border: 1px solid #f1f1f1;
+        text-align: center;
+      }
+
+      table th {
+        background-color: #f9f9f9;
+        color: #555;
+        font-weight: 600;
+      }
+
+      /* Player cell styling */
+      .player-cell {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: left;
+        padding-left: 15px;
+      }
+
+      .player-img {
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        border-radius: 15%;
+        margin-right: 12px;
+        border: 2px solid #ddd;
+      }
+
+      .player-name {
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #333;
+      }
+
+      /* Country column styling */
+      td:nth-child(3) {
+        text-align: left;
+        color: #666;
+      }
+
+      .format-buttons .btn {
+        margin: 5px;
+        border-radius: 50%;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .ranking-container {
+          padding: 20px;
+          margin: 20px;
+        }
+
+        h2 {
+          font-size: 22px;
+        }
+
+        .nav-tabs .nav-link {
+          font-size: 14px;
+          padding: 8px 10px;
+        }
+
+        .table {
+          font-size: 14px;
+          width: 100%;
+          overflow-x: auto;
+          display: block;
+        }
+
+        th,
+        td {
+          padding: 10px;
+        }
+
+        .player-cell {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .player-img {
+          width: 35px;
+          height: 35px;
+        }
+
+        .player-name {
+          font-size: 14px;
+        }
+
+        td:nth-child(3) {
+          font-size: 13px;
+        }
+      }
+
+      /* Extra Small Screens (Phones < 480px) */
+      @media (max-width: 480px) {
+        h2 {
+          font-size: 20px;
+        }
+
+        .table {
+          font-size: 13px;
+        }
+
+        th,
+        td {
+          padding: 8px;
+        }
+
+        .player-img {
+          width: 30px;
+          height: 30px;
+        }
+
+        .player-name {
+          font-size: 13px;
+        }
+
+        td:nth-child(3) {
+          font-size: 12px;
+        }
+
+        .format-buttons .btn {
+          font-size: 12px;
+          padding: 6px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ranking-container">
+        <h2>ICC Cricket Rankings - Men's Batting</h2>
+
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-tabs mb-3 justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Batting</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Bowling</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">All-rounders</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+        </ul>
+
+        <!-- Format Selection Buttons -->
+        <div class="format-buttons text-center mb-3">
+          <button class="btn btn-success">TEST</button>
+          <button class="btn btn-secondary">ODI</button>
+          <button class="btn btn-secondary">T20</button>
+        </div>
+
+        <!-- Table -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Player</th>
+              <th>Country</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="player-cell">
+                <img src="img/root.jpg" class="player-img" />
+                <span class="player-name">Joe Root</span>
+              </td>
+              <td>England</td>
+              <td>895</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="player-cell">
+                <img src="img/harry.webp" class="player-img" />
+                <span class="player-name">Harry Brook</span>
+              </td>
+              <td>England</td>
+              <td>876</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="player-cell">
+                <img src="img/kane.jfif" class="player-img" />
+                <span class="player-name">Kane Williamson</span>
+              </td>
+              <td>New Zealand</td>
+              <td>867</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="player-cell">
+                <img src="img/jaiswal.webp" class="player-img" />
+                <span class="player-name">Yashasvi Jaiswal</span>
+              </td>
+              <td>India</td>
+              <td>847</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="player-cell">
+                <img src="img/head.jpg" class="player-img" />
+                <span class="player-name">Travis Head</span>
+              </td>
+              <td>Australia</td>
+              <td>772</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td class="player-cell">
+                <img src="img/temba.jpg" class="player-img" />
+                <span class="player-name">Temba Bavuma</span>
+              </td>
+              <td>South Africa</td>
+              <td>769</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td class="player-cell">
+                <img src="img/Kamindu-Mendis-.jpg" class="player-img" />
+                <span class="player-name">Kamindu Mendis</span>
+              </td>
+              <td>Sri Lanka</td>
+              <td>759</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td class="player-cell">
+                <img src="img/smith.jpg" class="player-img" />
+                <span class="player-name">Steven Smith</span>
+              </td>
+              <td>Australia</td>
+              <td>746</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td class="player-cell">
+                <img src="img/rishabh-pant-1.webp" class="player-img" />
+                <span class="player-name">Rishabh Pant</span>
+              </td>
+              <td>India</td>
+              <td>739</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td class="player-cell">
+                <img src="img/daryl.webp" class="player-img" />
+                <span class="player-name">Daryl Mitchell</span>
+              </td>
+              <td>New Zealand</td>
+              <td>725</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td class="player-cell">
+                <img src="img/saud.jfif" class="player-img" />
+                <span class="player-name">Saud Shakeel</span>
+              </td>
+              <td>Pakistan</td>
+              <td>724</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td class="player-cell">
+                <img src="img/babar.webp" class="player-img" />
+                <span class="player-name">Babar Azam</span>
+              </td>
+              <td>Pakistan</td>
+              <td>697</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td class="player-cell">
+                <img src="img/marnus-labuschagne.webp" class="player-img" />
+                <span class="player-name">Marnus Labuschagne</span>
+              </td>
+              <td>Australia</td>
+              <td>689</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td class="player-cell">
+                <img src="img/chandimal.jpg" class="player-img" />
+                <span class="player-name">Dinesh Chandimal</span>
+              </td>
+              <td>Sri Lanka</td>
+              <td>685</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td class="player-cell">
+                <img src="img/de- silva.webp" class="player-img" />
+                <span class="player-name">Dhananjaya de Silva</span>
+              </td>
+              <td>Sri Lanka</td>
+              <td>682</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Teams</title>
+    <link rel="stylesheet" href="./static/css/teams.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="img/Screenshot (39).png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/Screenshot (39).png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">Live Scores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dropdown">
+              <li class="dropbtn" style="color: cadetblue">
+                <strong>More &#x25BE;</strong>
+                <div class="dropdown-content">
+                  <a href="ipl.html">League Teams</a>
+                  <a href="points_table.html">Points Table</a>
+                  <a href="series All.html">Series</a>
+                  <a href="Gallaries.html">Galleries</a>
+                  <a href="#Matches.html">Matches</a>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">Live Scores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <h1 class="tea">International Cricket Teams</h1>
+
+    <main>
+      <section class="teams">
+        <div class="team-card" id="team-india">
+          <img src="img/Flag_of_India.svg1.webp" alt="India Logo" />
+          <h2>India</h2>
+        </div>
+        <div class="team-card" id="team-australia">
+          <img src="img/Flag_of_Australia.webp" alt="Australia Logo" />
+          <h2>Australia</h2>
+        </div>
+        <div class="team-card" id="team-england">
+          <img src="img/Flag_ofeng.webp" alt="England Logo" />
+          <h2>England</h2>
+        </div>
+        <div class="team-card" id="team-south-africa">
+          <img src="img/Flag-South-Africa.webp" alt="South Africa Logo" />
+          <h2>South Africa</h2>
+        </div>
+        <div class="team-card" id="team-west-indies">
+          <img src="img/west-indies-flag.jpg" alt="West Indies Logo" />
+          <h2>West Indies</h2>
+        </div>
+        <div class="team-card" id="team-new-zealand">
+          <img src="img/Flag_of_New_Zealand.svg.png" alt="New Zealand Logo" />
+          <h2>New Zealand</h2>
+        </div>
+        <div class="team-card" id="team-afghanistan">
+          <img src="img/Flag-Afghanistan.webp" alt="Afghanistan Logo" />
+          <h2>Afghanistan</h2>
+        </div>
+        <div class="team-card" id="team-pakistan">
+          <img src="img/Flag_of_Pakistan.svg" alt="Pakistan Logo" />
+          <h2>Pakistan</h2>
+        </div>
+        <div class="team-card" id="team-zimbabwe">
+          <img src="img/Flag-Zimbabwe.webp" alt="Zimbabwe Logo" />
+          <h2>Zimbabwe</h2>
+        </div>
+        <div class="team-card" id="team-scotland">
+          <img src="img/Flag_of_Scotland.svg (1).png" alt="Scotland Logo" />
+          <h2>Scotland</h2>
+        </div>
+        <div class="team-card" id="team-bangladesh">
+          <img src="img/bangladesh.png1.jpg" alt="Bangladesh Logo" />
+          <h2>Bangladesh</h2>
+        </div>
+        <div class="team-card" id="team-netherlands">
+          <img
+            src="img/Flag_of_the_Netherlands.svg (1).png"
+            alt="Netherlands Logo"
+          />
+          <h2>Netherlands</h2>
+        </div>
+        <div class="team-card" id="team-nepal">
+          <img src="img/Flag_of_Nepal.svg.png" alt="Nepal Logo" />
+          <h2>Nepal</h2>
+        </div>
+        <div class="team-card" id="team-ireland">
+          <img src="img/Flag_of_Ireland (1).svg" alt="Ireland Logo" />
+          <h2>Ireland</h2>
+        </div>
+        <div class="team-card" id="team-srilanka">
+          <img src="img/Flag_of_Sri_Lanka.svg (1).png" alt="Sri Lanka Logo" />
+          <h2>Sri Lanka</h2>
+        </div>
+        <div class="team-card" id="team-bermuda">
+          <img src="img/bermuda.jfif" alt="Bermuda Logo" />
+          <h2>Bermuda</h2>
+        </div>
+        <div class="team-card" id="team-kenya">
+          <img src="img/kenya.png" alt="Kenya Logo" />
+          <h2>Kenya</h2>
+        </div>
+        <div class="team-card" id="team-canada">
+          <img src="img/canada.png" alt="Canada Logo" />
+          <h2>Canada</h2>
+        </div>
+        <div class="team-card" id="team-hong-kong">
+          <img src="img/hong-kong.png" alt="Hong Kong Logo" />
+          <h2>Hong Kong</h2>
+        </div>
+        <div class="team-card" id="team-uganda">
+          <img src="img/uganda.png" alt="Uganda Logo" />
+          <h2>Uganda</h2>
+        </div>
+        <div class="team-card" id="team-usa">
+          <img src="img/usa.webp" alt="USA Logo" />
+          <h2>United States of America</h2>
+        </div>
+        <div class="team-card" id="team-singapore">
+          <img src="img/singapore.png" alt="Singapore Logo" />
+          <h2>Singapore</h2>
+        </div>
+        <div class="team-card" id="team-uae">
+          <img src="img/UAE.png" alt="UAE Logo" />
+          <h2>United Arab Emirates</h2>
+        </div>
+        <div class="team-card" id="team-namibia">
+          <img src="img/namibia.png" alt="Namibia Logo" />
+          <h2>Namibia</h2>
+        </div>
+        <div class="team-card" id="team-denmark">
+          <img src="img/denmark.png" alt="Denmark Logo" />
+          <h2>Denmark</h2>
+        </div>
+        <div class="team-card" id="team-germany">
+          <img src="img/Flag-Germany.webp" alt="Germany Logo" />
+          <h2>Germany</h2>
+        </div>
+        <div class="team-card" id="team-malaysia">
+          <img src="img/Flag_of_Malaysia.svg.png" alt="Malaysia Logo" />
+          <h2>Malaysia</h2>
+        </div>
+        <div class="team-card" id="team-kuwait">
+          <img src="img/Flag_of_Kuwait.svg.png" alt="Kuwait Logo" />
+          <h2>Kuwait</h2>
+        </div>
+        <div class="team-card" id="team-italy">
+          <img src="img/Flag_of_Italy.svg.png" alt="Italy Logo" />
+          <h2>Italy</h2>
+        </div>
+        <div class="team-card" id="team-oman">
+          <img src="img/Flag_of_Oman.svg.png" alt="Oman Logo" />
+          <h2>Oman</h2>
+        </div>
+        <div class="team-card" id="team-iran">
+          <img src="img/Flag_of_Iran.svg.png" alt="Iran Logo" />
+          <h2>Iran</h2>
+        </div>
+        <div class="team-card" id="team-belgium">
+          <img src="img/Flag_of_Belgium.svg" alt="Belgium Logo" />
+          <h2>Belgium</h2>
+        </div>
+        <div class="team-card" id="team-botswana">
+          <img src="img/Flag_of_Botswana.svg.png" alt="Botswana Logo" />
+          <h2>Botswana</h2>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="livescores.html">Live Scores</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="index.html"
+          ><img
+            src="img/Screenshot (39).png"
+            alt="Footer Logo"
+            id="footer-logo"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <p>
+          Follow us on <br /><br />
+          <a
+            href="https://www.facebook.com/?_rdr"
+            class="social-icon"
+            style="color: #3b5998"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://x.com/i/flow/login"
+            class="social-icon"
+            style="color: lightgray"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="social-icon"
+            style="color: orangered"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://web.whatsapp.com/"
+            class="social-icon"
+            style="color: green"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </p>
+        <p>
+          &copy; 2024<a href="index.html" style="color: aliceblue">TRI-CriC</a
+          >.All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./static/css/js/team.js"></script>
+  </body>
+</html>

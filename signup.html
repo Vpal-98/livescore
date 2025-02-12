@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e3f2fd;
+            background: url(img/GRD.webp)  no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+            
+        }
+
+        .join-form-container {
+            background-color: #f4f4f4;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        .join-form-container h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .join-form-container p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .join-form-container .form-group {
+            margin-bottom: 20px;
+        }
+
+        .join-form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .join-form-container input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .join-form-container .cta-button {
+            background-color: #00bcd4;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .join-form-container .cta-button:hover {
+            background-color: #0097a7;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="joinForm" class="join-form-container">
+            <h2>Sign Up Now and Be a Part of the Action!</h2>
+            <p>Sign up today and enjoy exclusive access to all features and updates.</p>
+            <!-- <button type="close" name="close">X</button> -->
+
+            <form id="signupForm" class="join-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Subscribe to our newsletter
+                    </label>
+                </div>
+                <button type="submit" class="cta-button"> Sign Up</button>
+                <p>Already have an account? <a href="join now.html">sign in</a></p>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // Add event listener to the form
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Get the form inputs
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            // Display a pop-up message
+            alert(`Thank you, ${name}! You have successfully signed up with the email: ${email}.`);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule</title>
+    <link rel="stylesheet" href="./static/css/schedule.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="img/Screenshot (39).png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/Screenshot (39).png" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">Live Scores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dropdown">
+              <li class="dropbtn" style="color: cadetblue">
+                <strong>more &#x25BE;</strong>
+                <div class="dropdown-content">
+                  <a href="ipl.html">League Teams</a>
+                  <a href="#Points table">Points Table</a>
+                  <a href="series All.html">Series</a>
+                  <a href="Gallaries.html">Gallaries</a>
+                  <a href="#Matches.html">Matches</a>
+                  <!-- <a href="#Highlights.html">Highlights</a> -->
+                </div>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">livescores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container1">
+      <div class="h1">Cricket Schedule</div>
+
+      <div class="tabs">
+        <a href="schedule.html"
+          ><button class="active">International</button></a
+        >
+        <a href="domestic& others.html"><button>Domestic & Others</button></a>
+        <a href="T20leagues.html"><button>T20 Leagues</button></a>
+        <a href="women.html"><button>Women</button></a>
+        <a href="AllMatches.html"><button>All Matches</button></a>
+      </div>
+    </div>
+
+    <div class="container4">
+      <!-- Date Header -->
+      <div class="date-header">FRI, JAN 10 2025</div>
+
+      <!-- Match 1 -->
+      <div class="match">
+        <div class="match-info-left"><b>SA20, 2025</b></div>
+        <div class="match-info-center">
+          <div>Durban Super Giants vs Pretoria Capitals, 2nd Match</div>
+          <div><small>Kingsmead, Durban</small></div>
+        </div>
+        <div class="match-time">
+          <div><b>9:00 PM</b></div>
+          <div>(03:30 PM GMT / 05:30 PM LOCAL)</div>
+        </div>
+      </div>
+
+      <!-- Match 2 -->
+      <div class="match">
+        <div class="match-info-left">West Indies tour of Pakistan, 2025</div>
+        <div class="match-info-center">
+          <div>Pakistan A vs West Indies, 2-day Warm-up Match, Day 1</div>
+          <div><small>Rawalpindi Cricket Stadium, Rawalpindi</small></div>
+        </div>
+        <div class="match-time">
+          <div><b>10:00 AM</b></div>
+          <div>(04:30 AM GMT / 09:30 AM LOCAL)</div>
+        </div>
+      </div>
+
+      <!-- Match 3 (Updated) -->
+      <div class="match">
+        <div class="match-info-left">Bangladesh Premier League, 2024-25</div>
+        <div class="match-info-center">
+          <div>Durbar Rajshahi vs Khulna Tigers, 15th Match</div>
+          <div><small>Sylhet International Cricket Stadium, Sylhet</small></div>
+        </div>
+        <div class="match-time">
+          <div><b>1:30 PM</b></div>
+          <div>(08:00 AM GMT / 02:00 PM LOCAL)</div>
+        </div>
+      </div>
+
+      <!-- Line above the 2nd match (Dhaka Capitals vs Sylhet Strikers) -->
+      <div class="half-line"></div>
+
+      <!-- Match 4 (Updated) -->
+      <div class="match">
+        <div class="match-info-left"></div>
+        <div class="match-info-center">
+          <div>Dhaka Capitals vs Sylhet Strikers, 16th Match</div>
+          <div><small>Sylhet International Cricket Stadium, Sylhet</small></div>
+        </div>
+        <div class="match-time">
+          <div><b>6:30 PM</b></div>
+          <div>(01:00 PM GMT / 07:00 PM LOCAL)</div>
+        </div>
+      </div>
+
+      <!-- Match 5 -->
+      <div class="match">
+        <div class="match-info-left">Ireland Women's Tour of India, 2025</div>
+        <div class="match-info-center">
+          <div>
+            India Women vs Ireland Women, 1st ODI (ICC Championship Match)
+          </div>
+          <div>
+            <small>Saurashtra Cricket Association Stadium, Rajkot</small>
+          </div>
+        </div>
+        <div class="match-time">
+          <div><b>11:00 AM</b></div>
+          <div>(05:30 AM GMT / 11:00 AM LOCAL)</div>
+        </div>
+      </div>
+
+      <!-- Match 6 -->
+      <div class="match">
+        <div class="match-info-left">Big Bash League, 2024-25</div>
+        <div class="match-info-center">
+          <div>Hobart Hurricanes vs Sydney Thunder, 29th Match</div>
+          <div><small>Bellerive Oval, Hobart</small></div>
+        </div>
+        <div class="match-time">
+          <div><b>1:45 PM</b></div>
+          <div>(08:15 AM GMT / 07:15 PM LOCAL)</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0; margin: 0">
+          <li>
+            <a href="index.html" style="color: white; text-decoration: none"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="livescores.html"
+              style="color: white; text-decoration: none"
+              >Live Scores</a
+            >
+          </li>
+          <li>
+            <a href="teams.html" style="color: white; text-decoration: none"
+              >Teams</a
+            >
+          </li>
+          <li>
+            <a href="schedule.html" style="color: white; text-decoration: none"
+              >Schedule</a
+            >
+          </li>
+          <li>
+            <a href="news.html" style="color: white; text-decoration: none"
+              >News</a
+            >
+          </li>
+          <li>
+            <a href="about.html" style="color: white; text-decoration: none"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" style="color: white; text-decoration: none"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="index.html"
+          ><img src="/img/logoai.png" alt="Footer Logo" id="footer-logo"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <p style="text-align: center">
+          Follow us on <br /><br />
+          <a
+            href="https://www.facebook.com/?_rdr"
+            class="social-icon"
+            style="color: #3b5998"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://x.com/i/flow/login"
+            class="social-icon"
+            style="color: lightgray"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="social-icon"
+            style="color: orangered"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://web.whatsapp.com/"
+            class="social-icon"
+            style="color: green"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </p>
+        <p>
+          &copy; 2024
+          <a href="index.html" style="color: lightblue">TRI-CriC</a>.All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

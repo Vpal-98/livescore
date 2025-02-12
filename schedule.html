@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule</title>
+    <link rel="stylesheet" href="./static/css/schedule.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="img/Screenshot (39).png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/Screenshot (39).png" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">Live Scores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dropdown">
+              <li class="dropbtn" style="color: cadetblue">
+                <strong>more &#x25BE;</strong>
+                <div class="dropdown-content">
+                  <a href="ipl.html">League Teams</a>
+                  <a href="points_table.html">Points Table</a>
+                  <a href="series All.html">Series</a>
+                  <a href="Gallaries.html">Gallaries</a>
+                  <a href="#Matches.html">Matches</a>
+                  <!-- <a href="#Highlights.html">Highlights</a> -->
+                </div>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">livescores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container1">
+      <div class="h1">Cricket Schedule</div>
+
+      <div class="tabs">
+        <button class="active">International</button>
+        <a href="domestic& others.html"><button>Domestic & Others</button></a>
+        <a href="T20leagues.html"><button>T20 Leagues</button></a>
+        <a href="women.html"><button>Women</button></a>
+        <a href="AllMatches.html"><button>All Matches</button></a>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Wed, Jan 08 2025</div>
+        <div class="match-info">
+          <span>Sri Lanka tour of New Zealand, 2024-25</span>
+          <div class="time">
+            <b>6:30 AM /</b>
+            01:00 AM GMT / 02:00 PM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          New Zealand vs Sri Lanka, 2<sup>nd</sup> ODI<br />
+          <small>Seddon Park, Hamilton</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Fri, Jan 10 2025</div>
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan A vs West Indies, 2-day Warm-up Match<br />
+          <small>Islamabad Club Cricket Oval, Islamabad</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">SAT, Jan 11 2025</div>
+        <div class="match-info">
+          <span>SriLanka tour of NewZealand, 2025</span>
+          <div class="time">
+            <b>6:30 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          New Zealand vs Sri Lanka, 3<sup>rd</sup> ODI<br />
+          <small>Eiden Park, Auckland</small>
+        </div>
+        <br /><br /><br /><br />
+        <!-- <div class="date">Fri, Jan 10 2025</div> -->
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan A vs West Indies, 2-day Warm-up Match<br />
+          <small>Islamabad Club Cricket Oval, Islamabad</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Fri, Jan 17 2025</div>
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan vs West Indies, 1<sup>st</sup> Test, Day 1 <br />
+          <small>Multan Cricket Stadium, Multan</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Sat, Jan 18 2025</div>
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan vs West Indies, 1<sup>st</sup> Test, Day 2 <br />
+          <small>Multan Cricket Stadium, Multan</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Sun, Jan 19 2025</div>
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan vs West Indies, 1<sup>st</sup> Test, Day 3 <br />
+          <small>Multan Cricket Stadium, Multan</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Mon, Jan 20 2025</div>
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan vs West Indies, 1<sup>st</sup> Test, Day 4 <br />
+          <small>Multan Cricket Stadium, Multan</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Tue, Jan 21 2025</div>
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan vs West Indies, 1<sup>st</sup> Test, Day 5 <br />
+          <small>Multan Cricket Stadium, Multan</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Wed, Jan 22 2025</div>
+        <div class="match-info">
+          <span>England tour of India, 2025</span>
+          <div class="time">
+            <b>7:00 PM /</b>
+            01:30 AM GMT / 07:00 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          India vs England, 1<sup>st</sup> T20I <br />
+          <small>Eden Gardens, Kolkata</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Sat, Jan 25 2025</div>
+        <div class="match-info">
+          <span>England tour of India, 2025</span>
+          <div class="time">
+            <b>7:00 PM /</b>
+            01:30 AM GMT / 07:00 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          India vs England, 2<sup>nd</sup> T20I <br />
+          <small>MA Chidambaram Stadium, Chennai</small>
+        </div>
+        <br /><br /><br /><br />
+        <!-- <div class="date">Fri, Jan 10 2025</div> -->
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan vs West Indies, 2<sup>nd</sup> Test, Day 1 <br />
+          <small>Multan Cricket Stadium, Multan</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Sun, Jan 26 2025</div>
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan vs West Indies, 2<sup>nd</sup> Test, Day 2 <br />
+          <small>Multan Cricket Stadium, Multan</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Mon, Jan 27 2025</div>
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan vs West Indies, 2<sup>nd</sup> Test, Day 3 <br />
+          <small>Multan Cricket Stadium, Multan</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Tue, Jan 28 2025</div>
+        <div class="match-info">
+          <span>England tour of India, 2025</span>
+          <div class="time">
+            <b>7:00 PM /</b>
+            01:30 AM GMT / 07:00 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          India vs England, 3<sup>rd</sup> T20I <br />
+          <small>Saurashtra Cricket Association Stadium, Rajkot</small>
+        </div>
+        <br /><br /><br /><br />
+        <!-- <div class="date">Fri, Jan 10 2025</div> -->
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan vs West Indies, 2<sup>nd</sup> Test, Day 4 <br />
+          <small>Multan Cricket Stadium, Multan</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Wed, Jan 29 2025</div>
+        <div class="match-info">
+          <span>Australia tour of SriLanka, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 10:00 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          SriLanka vs Australia, 1<sup>st</sup> Test, Day 1 <br />
+          <small>Galle International Stadium, Galle</small>
+        </div>
+        <br /><br /><br /><br />
+        <!-- <div class="date">Fri, Jan 10 2025</div> -->
+        <div class="match-info">
+          <span>West Indies tour of Pakistan, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 09:30 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          Pakistan vs West Indies, 2<sup>nd</sup> Test, Day 5 <br />
+          <small>Multan Cricket Stadium, Multan</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Thu, Jan 30 2025</div>
+        <div class="match-info">
+          <span>Australia tour of SriLanka, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 10:00 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          SriLanka vs Australia, 1<sup>st</sup> Test, Day 2 <br />
+          <small>Galle International Stadium, Galle</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Fri, Jan 31 2025</div>
+        <div class="match-info">
+          <span>England tour of India, 2025</span>
+          <div class="time">
+            <b>7:00 PM /</b>
+            01:30 AM GMT / 07:00 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          India vs England, 4<sup>th</sup> T20I <br />
+          <small>Maharashtra Cricket Association Stadium, Pune</small>
+        </div>
+        <br /><br /><br /><br />
+        <!-- <div class="date">Fri, Jan 10 2025</div> -->
+        <div class="match-info">
+          <span>Australia tour of SriLanka, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 10:00 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          SriLanka vs Australia, 1<sup>st</sup> Test, Day 3 <br />
+          <small>Galle International Stadium, Galle</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Sat, Feb 01 2025</div>
+        <div class="match-info">
+          <span>Australia tour of SriLanka, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 10:00 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          SriLanka vs Australia, 1<sup>st</sup> Test, Day 4 <br />
+          <small>Galle International Stadium, Galle</small>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="date">Sun, Feb 02 2025</div>
+        <div class="match-info">
+          <span>England tour of India, 2025</span>
+          <div class="time">
+            <b>7:00 PM /</b>
+            01:30 AM GMT / 07:00 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          India vs England, 5<sup>th</sup> T20I <br />
+          <small>Wankhede Stadium, Mumbai</small>
+        </div>
+        <br /><br /><br /><br />
+        <!-- <div class="date">Fri, Jan 10 2025</div> -->
+        <div class="match-info">
+          <span>Australia tour of SriLanka, 2025</span>
+          <div class="time">
+            <b>10:00 AM /</b>
+            04:30 AM GMT / 10:00 AM LOCAL
+          </div>
+        </div>
+        <div class="match-details">
+          SriLanka vs Australia, 1<sup>st</sup> Test, Day 5 <br />
+          <small>Galle International Stadium, Galle</small>
+        </div>
+      </div>
+    </div>
+    <!-- form -->
+    <!-- <div class="modal" id="bookingModal">
+    <div class="modal-content">
+        <div class="modal-header">Book Your Tickets</div>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                <span id="nameError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                <span id="emailError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="^\d{10}$">
+                <span id="phoneError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="seats">Number of Tickets:</label>
+                <input type="number" id="seats" name="seats" min="1" max="10" required>
+                <span id="seatsError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="stand">Choose Stand:</label>
+                <select id="stand" name="stand" required>
+                    <option value="premium">Premium</option>
+                    <option value="regular">Regular</option>
+                    <option value="economy">Economy</option>
+                </select>
+                <span id="standError" class="error-message"></span>
+            </div>
+            <button type="submit" class="form-btn">Confirm Booking</button>
+            <button type="button" class="close-btn" onclick="closeModal()">Cancel</button>
+        </form>
+     </div>
+</div> -->
+
+    <script>
+      /* const modal = document.getElementById('bookingModal');
+
+    function openModal() {
+        modal.style.display = 'flex';
+    }
+
+    function closeModal() {
+        modal.style.display = 'none';
+    }
+
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Clear previous error messages
+        clearErrors();
+        
+        let isValid = true;
+        
+        // Name validation
+        const name = document.getElementById('name').value;
+        if (name.trim() === '') {
+            showError('nameError', 'Name is required.');
+            isValid = false;
+        }
+        
+        // Email validation
+        const email = document.getElementById('email').value;
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!emailPattern.test(email)) {
+            showError('emailError', 'Enter a valid email address.');
+            isValid = false;
+        }
+        
+        // Phone validation
+        const phone = document.getElementById('phone').value;
+        const phonePattern = /^\d{10}$/;
+        if (!phonePattern.test(phone)) {
+            showError('phoneError', 'Enter a valid phone number (10 digits).');
+            isValid = false;
+        }
+        
+        // Seats validation
+        const seats = document.getElementById('seats').value;
+        if (seats < 1 || seats > 10) {
+            showError('seatsError', 'Please select between 1 to 10 tickets.');
+            isValid = false;
+        }
+        
+        // Stand validation
+        const stand = document.getElementById('stand').value;
+        if (!stand) {
+            showError('standError', 'Please choose a stand.');
+            isValid = false;
+        }
+
+        if (isValid) {
+            alert('Booking Confirmed!');
+            modal.style.display = 'none';
+        }
+    });
+
+    function showError(id, message) {
+        document.getElementById(id).innerText = message;
+    }
+
+    function clearErrors() {
+        document.getElementById('nameError').innerText = '';
+        document.getElementById('emailError').innerText = '';
+        document.getElementById('phoneError').innerText = '';
+        document.getElementById('seatsError').innerText = '';
+        document.getElementById('standError').innerText = '';
+    }*/
+
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle("open");
+      }
+    </script>
+
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="livescores.html">Live Scores</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="index.html"
+          ><img
+            src="img/Screenshot (39).png"
+            alt="Footer Logo"
+            id="footer-logo"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <p>
+          Follow us on <br /><br />
+          <a
+            href="https://www.facebook.com/?_rdr"
+            class="social-icon"
+            style="color: #3b5998"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://x.com/i/flow/login"
+            class="social-icon"
+            style="color: lightgray"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="social-icon"
+            style="color: orangered"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://web.whatsapp.com/"
+            class="social-icon"
+            style="color: green"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </p>
+        <p>
+          &copy; 2024<a href="index.html" style="color: aliceblue">TRI-CriC</a
+          >.All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <div id="series-list"></div>
+    <!-- <script>
+      const seriesApi = async () => {
+        const element = document.querySelector("#series-list");
+        const url =
+          "https://api.cricapi.com/v1/series?apikey=f8a60488-cc45-4bbf-ba21-c3efff3b2c69&offset=0";
+
+        try {
+          const res = await fetch(url);
+
+          if (!res.ok) {
+            throw new Error(`API Error: ${res.status} ${res.statusText}`);
+          }
+
+          const data = await res.json();
+
+          const seriesList = data.data;
+
+          // Clear the existing content in the series list element
+          element.innerHTML = "";
+
+          // Populate the list with the fetched series data
+          seriesList.forEach((series) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = series.name || "Unnamed Series";
+            element.appendChild(listItem);
+          });
+
+          return seriesList;
+        } catch (error) {
+          console.error("Failed to fetch series data:", error.message);
+
+          // Update the DOM to display an error message
+          if (element) {
+            element.innerHTML = `<li>Error: ${error.message}</li>`;
+          }
+
+          return { error: error.message };
+        }
+      };
+      seriesApi();
+    </script> -->
+  </body>
+</html>

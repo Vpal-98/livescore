@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRI-cRIc</title>
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="img/Screenshot (39).png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/img/logoai.png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">Live Scores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dropdown">
+              <li class="dropbtn" style="color: cadetblue">
+                <strong>more &#x25BE;</strong>
+                <div class="dropdown-content">
+                  <a href="ipl.html">League Teams</a>
+                  <a href="points_table.html">Points Table</a>
+                  <a href="series All.html">Series</a>
+                  <a href="Gallaries.html">Gallaries</a>
+                  <a href="#Matches.html">Matches</a>
+                  <!-- <a href="#Highlights.html">Highlights</a> -->
+                </div>
+              </li>
+            </div>
+            <!-- <li><a href="#Menu">Menu &#x25BE;</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#link 1">Link 1</a></li>
+                            <li><a href="#link 1">Link 2</a></li>
+                            <li><a href="#link 1">Link 3</a></li>
+                            <li><a href="#link 1">Link 4</a></li>
+                            <li><a href="#link 1">Link 5</a></li>
+                        </ul>
+                    </li> -->
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">livescores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dropdown">
+              <li class="dropbtn" style="color: cadetblue">
+                <strong>more &#x25BE;</strong>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Join Now Button --><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <h1 class="wlcm">Welcome to TRI-CriC</h1>
+      <p class="white">Your ultimate cricket companion!</p>
+
+      <a href="join now.html"
+        ><button id="joinNowBtn" class="cta-button">Sign In</button></a
+      >
+      <!-- Join Form (Initially Hidden)
+        <div id="joinForm" class="join-form-container" style="display: none;">
+            <h2>Join Now and Be a Part of the Action!</h2>
+            <p>Sign up today and enjoy exclusive access to all features and updates.</p>
+          
+             Sign-Up Form 
+            <form action="submit_form.php" method="POST" class="join-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="newsletter">
+                  <input type="checkbox" id="newsletter" name="newsletter">
+                  Subscribe to our newsletter
+                </label>
+              </div>
+          
+              <button type="submit" class="cta-button">Join Now</button>
+            </form>
+            <div class="extra-links">
+                <p>
+                  <a href="forgotpass.html" onclick="toggleForm('forgotPasswordForm')">Forgot Password?</a>
+                </p>
+              </div>
+            </div>-->
+    </main>
+    <br />
+    <!-- <div class="carousel">
+        <div class="carousel-item active">
+            <section>
+                <h1 style="background-color:cadetblue;">Live Scores</h1>
+                <h3 style="color: blue;">India vs Australia</h3>
+                <div class="scoreboard">
+                    <p>India: 245/6 (48.2 overs)</p>
+                    <p>Australia: Yet to Bat</p>
+                </div>
+                <button id="liveShowMore">
+                    <a href="livescores.html">Show More</a>
+                </button>
+            </section>
+        </div>
+        <div class="carousel-item">
+            <section>
+                <h1 style="background-color:cadetblue;">Live Scores</h1>
+                <h3 style="color: blue;">India vs England</h3>
+                <div class="scoreboard">
+                    <p>India: 456/6 (50 overs)</p>
+                    <p>England: Yet to Bat</p>
+                </div>
+                <button id="liveShowMore">
+                    <a href="livescores.html">Show More</a>
+                </button>
+            </section>
+            </div>
+            <div class="carousel-item">
+                <section>
+                    <h1 style="background-color:cadetblue;">Live Scores</h1>
+                    <h3 style="color: blue;">SA vs WestIndies</h3>
+                    <div class="scoreboard">
+                        <p>SA: 235/6 (42.3 overs)</p>
+                        <p>WestIndies: Yet to Bat</p>
+                    </div>
+                    <button id="liveShowMore">
+                        <a href="livescores.html">Show More</a>
+                    </button>
+                </section>
+                </div>
+                <div class="carousel-item">
+                    <section>
+                        <h1 style="background-color:cadetblue;">Live Scores</h1>
+                        <h3 style="color: blue;">NewZealand vs England</h3>
+                        <div class="scoreboard">
+                            <p>NewZealand: 530/6 (50 overs)</p>
+                            <p>England: Yet to Bat</p>
+                        </div>
+                        <button id="liveShowMore">
+                            <a href="livescores.html">Show More</a>
+                        </button>
+                    </section>
+                    </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div> -->
+
+    <div class="score-container">
+      <button class="scroll-btn left">←</button>
+      <div class="score-cards">
+        <!-- Scorecard 1 -->
+        <div class="score-card">
+          <p style="display: flex; align-items: center; gap: 8px">
+            <small
+              >5<sup>th</sup> Test<b>.</b> India tour of Australia
+              2024-25</small
+            >
+            <a href="livescores.html"
+              ><button
+                type="button"
+                value="Test"
+                style="
+                  padding: 5px 10px;
+                  font-size: 14px;
+                  border: none;
+                  background-color: cadetblue;
+                  color: white;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              >
+                Test
+              </button></a
+            >
+          </p>
+          <h4>
+            <img src="img/India flag.jpg" alt="MLR Flag" class="flag-icon" />
+            Ind vs
+            <img
+              src="img/Flag_of_Australia.webp"
+              alt="ADS Flag"
+              class="flag-icon"
+            />
+            Aus
+          </h4>
+          <p><strong>Aus</strong>: 142-9 (20)</p>
+          <p><strong>India</strong>: 70-0 (8.1)</p>
+          <p class="highlight">India need 73 runs in 71 balls</p>
+          <div class="button-section">
+            <!-- <a href="#points-table" class="btn" id="points-table-link"><small>Tables</small></a> -->
+            <a href="#schedule" class="btn" id="schedule-link"
+              ><small>Schedule</small></a
+            >
+            <a href="livescores.html" class="btn" id="live-score-link"
+              ><small>Live Score</small></a
+            >
+          </div>
+        </div>
+        <!-- Scorecard 2 -->
+        <div class="score-card">
+          <p style="display: flex; align-items: center; gap: 8px">
+            <small
+              >3<sup>rd</sup> Test<b>.</b> Zimbabwe tour of Afganistan
+              2024-25</small
+            >
+            <a href="livescores.html"
+              ><button
+                type="button"
+                value="Test"
+                style="
+                  padding: 5px 10px;
+                  font-size: 14px;
+                  border: none;
+                  background-color: cadetblue;
+                  color: white;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              >
+                Test
+              </button></a
+            >
+          </p>
+          <h4>
+            <img
+              src="img/Flag-Zimbabwe.webp"
+              alt="Zimbabwe"
+              class="flag-icon"
+            />
+            Zim vs
+            <img
+              src="img/Flag-Afghanistan.webp"
+              alt="afganistan"
+              class="flag-icon"
+            />
+            Afg
+          </h4>
+          <p><strong>Zim</strong>: 256-4 (42)</p>
+          <p><strong>Afg</strong>:</p>
+          <p>Day 1: Lunch Break</p>
+          <div class="button-section">
+            <!-- <a href="#points-table" class="btn" id="points-table-link"><small>Tables</small></a> -->
+            <a href="#schedule" class="btn" id="schedule-link"
+              ><small>Schedule</small></a
+            >
+            <a href="#live-score" class="btn" id="live-score-link"
+              ><small>Live Score</small></a
+            >
+          </div>
+        </div>
+        <!-- More cards -->
+        <div class="score-card">
+          <p style="display: flex; align-items: center; gap: 8px">
+            <small
+              >2<sup>nd</sup> T20I<b>.</b> England tour of South-Africa
+              2024-25</small
+            >
+            <a href="livescores.html"
+              ><button
+                type="button"
+                value="Test"
+                style="
+                  padding: 5px 10px;
+                  font-size: 14px;
+                  border: none;
+                  background-color: cadetblue;
+                  color: white;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              >
+                T20I
+              </button></a
+            >
+          </p>
+          <h4>
+            <img src="img/Flag-South-Africa.webp" alt="" class="flag-icon" />
+            SA vs
+            <img src="img/Flag_ofeng.webp" alt="" class="flag-icon" />
+            Eng
+          </h4>
+          <p><strong>SA</strong>: 230-6 (20)</p>
+          <p><strong>Eng</strong>: (0.0)</p>
+          <p class="highlight">England yet to bat</p>
+          <div class="button-section">
+            <!-- <a href="#points-table" class="btn" id="points-table-link"><small>Tables</small></a> -->
+            <a href="#schedule" class="btn" id="schedule-link"
+              ><small>Schedule</small></a
+            >
+            <a href="#live-score" class="btn" id="live-score-link"
+              ><small>Live Score</small></a
+            >
+          </div>
+        </div>
+        <div class="score-card">
+          <p style="display: flex; align-items: center; gap: 8px">
+            <small
+              >1<sup>st</sup> T20I<b>.</b> Ireland tour of Zimbabwe 2025</small
+            >
+            <a href="livescores.html"
+              ><button
+                type="button"
+                value="Test"
+                style="
+                  padding: 5px 10px;
+                  font-size: 14px;
+                  border: none;
+                  background-color: cadetblue;
+                  color: white;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              >
+                T20I
+              </button></a
+            >
+          </p>
+          <h4>
+            <img src="img/Flag_of_Ireland.svg" alt="" class="flag-icon" />
+            Ire vs
+            <img src="img/Flag-Zimbabwe.webp" alt="" class="flag-icon" />
+            Zim
+          </h4>
+          <p><strong>Ire</strong>: (20)</p>
+          <p><strong>Zim</strong>: (20)</p>
+          <p class="highlight">Toss delayed due to rain</p>
+          <div class="button-section">
+            <!-- <a href="#points-table" class="btn" id="points-table-link"><small>Tables</small></a> -->
+            <a href="#schedule" class="btn" id="schedule-link"
+              ><small>Schedule</small></a
+            >
+            <a href="#live-score" class="btn" id="live-score-link"
+              ><small>Live Score</small></a
+            >
+          </div>
+        </div>
+        <div class="score-card">
+          <p style="display: flex; align-items: center; gap: 8px">
+            <small
+              >1<sup>st</sup> ODI<b>.</b> Nepal tour of NewZealand 2025</small
+            >
+            <a href="livescores.html"
+              ><button
+                type="button"
+                value="Test"
+                style="
+                  padding: 5px 10px;
+                  font-size: 14px;
+                  border: none;
+                  background-color: cadetblue;
+                  color: white;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              >
+                ODI
+              </button></a
+            >
+          </p>
+          <h4>
+            <img
+              src="img/Flag_of_New_Zealand.svg.png"
+              alt=""
+              class="flag-icon"
+            />
+            NZ vs
+            <img src="img/Flag_of_Nepal.svg.png" alt="" class="flag-icon" />
+            Nep
+          </h4>
+          <p><strong>NZ</strong>: (50)</p>
+          <p><strong>Nepal</strong>: (50)</p>
+          <p class="highlight">Tomorrow at sharp 2pm 'o' clock</p>
+          <div class="button-section">
+            <!-- <a href="#points-table" class="btn" id="points-table-link"><small>Tables</small></a> -->
+            <a href="#schedule" class="btn" id="schedule-link"
+              ><small>Schedule</small></a
+            >
+            <a href="#live-score" class="btn" id="live-score-link"
+              ><small>Live Score</small></a
+            >
+          </div>
+        </div>
+        <div class="score-card">
+          <p style="display: flex; align-items: center; gap: 8px">
+            <small
+              >3<sup>rd</sup> T20I<b>.</b> WestIndies tour of SriLanka
+              2024-25</small
+            >
+            <a href="livescores.html"
+              ><button
+                type="button"
+                value="Test"
+                style="
+                  padding: 5px 10px;
+                  font-size: 14px;
+                  border: none;
+                  background-color: cadetblue;
+                  color: white;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              >
+                T20I
+              </button></a
+            >
+          </p>
+          <h4>
+            <img src="img/Flag_of_Sri_Lanka.svg.png" alt="" class="flag-icon" />
+            SL vs
+            <img src="img/west-indies-flag.jpg" alt="" class="flag-icon" />
+            WI
+          </h4>
+          <p><strong>SL</strong>: 132-7 (15.5)</p>
+          <p><strong>WI</strong>:</p>
+          <p class="highlight">Kemar roach bowling with speed 138.5</p>
+          <div class="button-section">
+            <!-- <a href="#points-table" class="btn" id="points-table-link"><small>Tables</small></a> -->
+            <a href="#schedule" class="btn" id="schedule-link"
+              ><small>Schedule</small></a
+            >
+            <a href="#live-score" class="btn" id="live-score-link"
+              ><small>Live Score</small></a
+            >
+          </div>
+        </div>
+        <div class="score-card">
+          <p style="display: flex; align-items: center; gap: 8px">
+            <small
+              >1<sup>st</sup> T20I<b>.</b> Netherlands tour of Scotland
+              2025</small
+            >
+            <a href="livescores.html"
+              ><button
+                type="button"
+                value="Test"
+                style="
+                  padding: 5px 10px;
+                  font-size: 14px;
+                  border: none;
+                  background-color: cadetblue;
+                  color: white;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              >
+                T20I
+              </button></a
+            >
+          </p>
+          <h4>
+            <img src="img/Flag_of_Scotland.svg.png" alt="" class="flag-icon" />
+            Sco vs
+            <img
+              src="img/Flag_of_the_Netherlands.svg.png"
+              alt=""
+              class="flag-icon"
+            />
+            Neth
+          </h4>
+          <p><strong>Sco</strong>: (20)</p>
+          <p><strong>Neth</strong>:</p>
+          <p class="highlight">
+            Scotland won the toss and elected to bat first
+          </p>
+          <div class="button-section">
+            <!-- <a href="#points-table" class="btn" id="points-table-link"><small>Tables</small></a> -->
+            <a href="#schedule" class="btn" id="schedule-link"
+              ><small>Schedule</small></a
+            >
+            <a href="#live-score" class="btn" id="live-score-link"
+              ><small>Live Score</small></a
+            >
+          </div>
+        </div>
+        <div class="score-card">
+          <p style="display: flex; align-items: center; gap: 8px">
+            <small>2<sup>nd</sup> ODI<b>.</b> Asia Cup Trophy 2025</small>
+            <a href="livescores.html"
+              ><button
+                type="button"
+                value="Test"
+                style="
+                  padding: 5px 10px;
+                  font-size: 14px;
+                  border: none;
+                  background-color: cadetblue;
+                  color: white;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              >
+                ODI
+              </button></a
+            >
+          </p>
+          <h4>
+            <img src="img/India flag.jpg" alt="" class="flag-icon" />
+            Ind vs
+            <img src="img/Flag_of_Sri_Lanka.svg.png" alt="" class="flag-icon" />
+            SL
+          </h4>
+          <p><strong>Ind</strong>:(50)</p>
+          <p><strong>SL</strong>: (50)</p>
+          <p class="highlight">India won the toss and elected to bowl first</p>
+          <div class="button-section">
+            <a href="#points-table" class="btn" id="points-table-link"
+              ><small>Tables</small></a
+            >
+            <a href="#schedule" class="btn" id="schedule-link"
+              ><small>Schedule</small></a
+            >
+            <a href="#live-score" class="btn" id="live-score-link"
+              ><small>Live Score</small></a
+            >
+          </div>
+        </div>
+        <div class="score-card">
+          <p style="display: flex; align-items: center; gap: 8px">
+            <small
+              >1<sup>st</sup> Test<b>.</b> Australia tour of England 2025</small
+            >
+            <a href="livescores.html"
+              ><button
+                type="button"
+                value="Test"
+                style="
+                  padding: 5px 10px;
+                  font-size: 14px;
+                  border: none;
+                  background-color: cadetblue;
+                  color: white;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              >
+                Test
+              </button></a
+            >
+          </p>
+          <h4>
+            <img src="img/Flag_ofeng.webp" alt="" class="flag-icon" />
+            Eng vs
+            <img src="img/Flag_of_Australia.webp" alt="" class="flag-icon" />
+            Aus
+          </h4>
+          <p><strong>Eng</strong>: (90)</p>
+          <p><strong>Aus</strong>: (90)</p>
+          <p class="highlight">Australiya coming to bat</p>
+          <div class="button-section">
+            <!-- <a href="#points-table" class="btn" id="points-table-link"><small>Tables</small></a> -->
+            <a href="#schedule" class="btn" id="schedule-link"
+              ><small>Schedule</small></a
+            >
+            <a href="#live-score" class="btn" id="live-score-link"
+              ><small>Live Score</small></a
+            >
+          </div>
+        </div>
+      </div>
+      <button class="scroll-btn right">→</button>
+    </div>
+
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0; margin: 0">
+          <li>
+            <a href="index.html" style="color: white; text-decoration: none"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="livescores.html"
+              style="color: white; text-decoration: none"
+              >Live Scores</a
+            >
+          </li>
+          <li>
+            <a href="teams.html" style="color: white; text-decoration: none"
+              >Teams</a
+            >
+          </li>
+          <li>
+            <a href="schedule.html" style="color: white; text-decoration: none"
+              >Schedule</a
+            >
+          </li>
+          <li>
+            <a href="news.html" style="color: white; text-decoration: none"
+              >News</a
+            >
+          </li>
+          <li>
+            <a href="about.html" style="color: white; text-decoration: none"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" style="color: white; text-decoration: none"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="index.html"
+          ><img src="/img/logoai.png" alt="Footer Logo" id="footer-logo"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <p style="text-align: center">
+          Follow us on <br /><br />
+          <a
+            href="https://www.facebook.com/?_rdr"
+            class="social-icon"
+            style="color: #3b5998"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://x.com/i/flow/login"
+            class="social-icon"
+            style="color: lightgray"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="social-icon"
+            style="color: orangered"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://web.whatsapp.com/"
+            class="social-icon"
+            style="color: green"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </p>
+        <p>
+          &copy; 2024
+          <a href="index.html" style="color: lightblue">TRI-CriC</a>.All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript to Toggle Form Visibility
+      const joinNowBtn = document.getElementById("joinNowBtn");
+      const joinForm = document.getElementById("joinForm");
+
+      joinNowBtn.addEventListener("click", function () {
+        // Toggle the form visibility when the button is clicked
+        if (joinForm.style.display === "none") {
+          joinForm.style.display = "block";
+        } else {
+          joinForm.style.display = "none";
+        }
+      });
+
+      //         let currentIndex = 0;
+
+      // function showSlide(index) {
+      //     const items = document.querySelectorAll('.carousel-item');
+      //     items.forEach((item, i) => {
+      //         item.classList.remove('active');
+      //         if (i === index) {
+      //             item.classList.add('active');
+      //         }
+      //     });
+      // }
+
+      // function nextSlide() {
+      //     const items = document.querySelectorAll('.carousel-item');
+      //     currentIndex = (currentIndex + 1) % items.length; // Cycle to the next item
+      //     showSlide(currentIndex);
+      // }
+
+      // function prevSlide() {
+      //     const items = document.querySelectorAll('.carousel-item');
+      //     currentIndex = (currentIndex - 1 + items.length) % items.length; // Cycle to the previous item
+      //     showSlide(currentIndex);
+      // }
+
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle("open");
+      }
+
+      const scrollLeft = () => {
+        scoreCardsRef.current.scrollBy({
+          left: -300, // Negative value for left scroll
+          behavior: "smooth",
+        });
+      };
+
+      const scrollRight = () => {
+        scoreCardsRef.current.scrollBy({
+          left: 300, // Positive value for right scroll
+          behavior: "smooth",
+        });
+      };
+
+      const scrollContainer = document.querySelector(".score-cards");
+
+      document
+        .querySelector(".scroll-btn.left")
+        .addEventListener("click", () => {
+          scrollContainer.scrollBy({ left: -300, behavior: "smooth" });
+        });
+
+      document
+        .querySelector(".scroll-btn.right")
+        .addEventListener("click", () => {
+          scrollContainer.scrollBy({ left: 300, behavior: "smooth" });
+        });
+    </script>
+
+    <!-- <div class="arr-w3ls">
+        <a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        </div> -->
+  </body>
+</html>

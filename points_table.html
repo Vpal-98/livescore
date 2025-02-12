@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="./static/css/schedule.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/Screenshot (39).png" type="image/png">  
+    <style>
+
+        
+    .container4 {
+      width: 85%;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: grey;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .nrr {
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    .dropdown-content2 {
+      display: none;
+      padding: 10px;
+      background-color: #d3d3d3; /* Light grey background */
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none; /* Remove borders */
+    }
+
+    .dropdown-content2 table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .dropdown-content2 th, .dropdown-content2 td {
+      padding: 8px;
+      border: none; /* Remove borders */
+    }
+
+    .dropdown-content2 td {
+      background-color: #f1f1f1; /* Light grey background for dropdown rows */
+    }
+
+    @media (max-width: 768px) {
+      table, th, td {
+        display: block;
+        width: 100%;
+      }
+
+      th {
+        background-color: #007bff;
+        position: sticky;
+        top: 0;
+      }
+
+      .dropdown-content2 td {
+        background-color: #f1f1f1;
+      }
+    }
+  
+    </style>
+
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                <img src="img/Screenshot (39).png">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="livescores.html">Live Scores</a></li>
+                  <li><a href="Teams.html">Teams</a></li>
+                  <li><a href="schedule.html">Schedule</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <div class="dropdown">
+                    <li class="dropbtn" style="color: cadetblue;"><strong>more &#x25BE;</strong>
+                    <div class="dropdown-content">
+                      <a href="ipl.html">League Teams</a>
+                      <a href="points_table.html">Points Table</a>
+                      <a href="series All.html">Series</a>
+                      <a href="Gallaries.html">Gallaries</a>
+                      <a href="#Matches.html">Matches</a>
+                      <!-- <a href="#Highlights.html">Highlights</a> -->
+                    </div>
+                    </li>
+                  </div>
+                </ul>
+              </nav>
+              <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+              </div>
+              <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="livescores.html">livescores</a></li>
+                  <li><a href="Teams.html">Teams</a></li>
+                  <li><a href="schedule.html">Schedule</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+             </div>
+        </div>
+    </header>
+
+    <div class="container4">
+        <h1>SA20, 2025 - Points Table</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Teams</th>
+              <th>Mat</th>
+              <th>Won</th>
+              <th>Lost</th>
+              <th>Tied</th>
+              <th>NR</th>
+              <th>Pts</th>
+              <th>NRR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MI Cape Town</td>
+              <td>3</td>
+              <td>2</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>9</td>
+              <td class="nrr" onclick="toggleDropdown('mi-details')">+2.408 ▼</td>
+            </tr>
+            <tr id="mi-details" class="dropdown-content2">
+              <td colspan="8">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Opponent</th>
+                      <th>Description</th>
+                      <th>Date</th>
+                      <th>Result</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sunrisers Eastern Cape</td>
+                      <td>1st Match</td>
+                      <td>09 Jan</td>
+                      <td style="color: lightcoral;">Won by 97 runs</td>
+                    </tr>
+                    <tr>
+                      <td>Joburg Super Kings</td>
+                      <td>4th Match</td>
+                      <td>11 Jan</td>
+                      <td style="color: lightcoral;">Loss by 6 runs (DLS Method)</td>
+                    </tr>
+                    <tr>
+                      <td>Paarl Royals</td>
+                      <td>6th Match</td>
+                      <td>13 Jan</td>
+                      <td style="color: lightcoral;">Won by 33 runs</td>
+                    </tr>
+                    <tr>
+                        <td>Paarl Royals</td>
+                        <td>9th Match</td>
+                        <td>15 Jan</td>
+                    </tr>
+                    <tr>
+                        <td>Joburg Super Kings</td>
+                        <td>13th Match</td>
+                        <td>18 Jan</td>
+                    </tr>
+                    <tr>
+                        <td>Durban Super Giants</td>
+                        <td>16th Match</td>
+                        <td>21 Jan</td>
+                    </tr>
+                    <tr>
+                        <td>Durban Super Giants</td>
+                        <td>21st Match</td>
+                        <td>25 Jan</td>
+                    </tr>
+                    <tr>
+                        <td>Sunrisers Eastern Cape</td>
+                        <td>25th Match</td>
+                        <td>29 Jan</td>
+                    </tr>
+                    <tr>
+                        <td>Pretoria Capitals</td>
+                        <td>27th Match</td>
+                        <td>31 Jan</td>
+                    </tr>
+                    <tr>
+                        <td>Pretoria Capitals</td>
+                        <td>30th Match</td>
+                        <td>02 Feb</td>
+                    </tr>
+    
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+    
+            <tr>
+              <td>Joburg Super Kings</td>
+              <td>2</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>8</td>
+              <td class="nrr" onclick="toggleDropdown('jsk-details')">+1.079 ▼</td>
+            </tr>
+            <tr id="jsk-details" class="dropdown-content2">
+              <td colspan="8">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Opponent</th>
+                      <th>Description</th>
+                      <th>Date</th>
+                      <th>Result</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>MI Cape Town</td>
+                        <td>4th Match</td>
+                        <td>11 Jan</td>
+                        <td style="color: lightcoral;">Won by 6 runs (DLS Method)</td>
+                      </tr>
+                      <tr>
+                        <td>Durban Super Giants</td>
+                        <td>8th Match</td>
+                        <td>14 Jan</td>
+                        <td style="color: lightcoral;">Won by 28 runs</td>
+                      </tr>
+                      <tr>
+                        <td>Pretoria Capitals</td>
+                        <td>10th Match</td>
+                        <td>16 Jan</td>
+                      </tr>
+                      <tr>
+                        <td>MI Cape Town</td>
+                        <td>13th Match</td>
+                        <td>18 Jan</td>
+                      </tr>
+                      <tr>
+                        <td>Paarl Royals</td>
+                        <td>15th Match</td>
+                        <td>20 Jan</td>
+                      </tr>
+                      <tr>
+                        <td>Sunrisers Eastern Cape</td>
+                        <td>19th Match</td>
+                        <td>24 Jan</td>
+                      </tr>
+                      <tr>
+                        <td>Sunrisers Eastern Cape</td>
+                        <td>22nd Match</td>
+                        <td>26 Jan</td>
+                      </tr>
+                      <tr>
+                        <td>Pretoria Capitals</td>
+                        <td>24th Match</td>
+                        <td>28 Jan</td>
+                      </tr>
+                      <tr>
+                        <td>Paarl Royals</td>
+                        <td>26th Match</td>
+                        <td>30 Jan</td>
+                      </tr>
+                      <tr>
+                        <td>Durban Super Giants</td>
+                        <td>29th Match</td>
+                        <td>01 Feb</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+    
+            <!-- Add more rows here for other teams -->
+            <tr>
+                <td>Pretoria Capitals</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>7</td>
+                <td class="nrr" onclick="toggleDropdown('pc')"> +0.894  ▼</td>
+              </tr>
+              <tr id="pc" class="dropdown-content2">
+                <td colspan="8">
+                  <table>
+                    <thead>
+                        <tr>
+                            <th>Opponent</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Result</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Joburg Super Kings</td>
+                                <td>1st Match</td>
+                                <td>10 Jan</td>
+                                <td style="color: lightcoral;">Lost by 20 runs</td>
+                              </tr>
+                              <tr>
+                                <td>MI Cape Town</td>
+                                <td>3rd Match</td>
+                                <td>12 Jan</td>
+                                <td style="color: lightcoral;">Won by 28 runs</td>
+                              </tr>
+                              <tr>
+                                <td>Durban Super Giants</td>
+                                <td>2nd Match</td>
+                                <td>10 Jan</td>
+                                <td style="color: lightcoral;">Loss by 2 runs</td>
+                              </tr>
+                              <tr>
+                                <td>Durban Super Giants</td>
+                                <td>5th Match</td>
+                                <td>12 Jan</td>
+                                <td style="color: lightcoral;">No result</td>
+                              </tr>
+                              <tr>
+                                <td>Sunrisers Eastern Cape</td>
+                                <td>7th Match</td>
+                                <td>14 Jan</td>
+                                <td style="color: lightcoral;">Won by 6 wickets</td>
+                              </tr>
+                              <tr>
+                                <td>Joburg Super Kings</td>
+                                <td>10th Match</td>
+                                <td>16 Jan</td>
+                              </tr>
+                              <tr>
+                                <td>Paarl Royals</td>
+                                <td>12th Match</td>
+                                <td>18 Jan</td>
+                              </tr>
+                              <tr>
+                                <td>Sunrisers Eastern Cape</td>
+                                <td>17th Match</td>
+                                <td>22 Jan</td>
+                              </tr>
+                              <tr>
+                                <td>Paarl Royals</td>
+                                <td>20th Match</td>
+                                <td>25 Jan</td>
+                              </tr>
+                              <tr>
+                                <td>Joburg Super Kings</td>
+                                <td>24th Match</td>
+                                <td>28 Jan</td>
+                              </tr>
+                              <tr>
+                                <td>MI Cape Town</td>
+                                <td>27th Match</td>
+                                <td>31 Jan</td>
+                              </tr>
+                              <tr>
+                                <td>MI Cape Town</td>
+                                <td>30th Match</td>
+                                <td>02 Feb</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+    
+                      <tr>
+                        <td>Durban Super Giants</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td class="nrr" onclick="toggleDropdown('dsg')"> -0.650  ▼</td>
+                      </tr>
+                      <tr id="dsg" class="dropdown-content2">
+                        <td colspan="8">
+                          <table>
+                            <thead>
+                                <tr>
+                                    <th>Opponent</th>
+                                    <th>Description</th>
+                                    <th>Date</th>
+                                    <th>Result</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+    
+                            <tr>
+                                <td>Pretoria Capitals</td>
+                                <td>2nd Match</td>
+                                <td>10 Jan</td>
+                                <td style="color: lightcoral;">Won by 2 runs</td>
+                                </tr>
+                                <tr>
+                                <td>Pretoria Capitals</td>
+                                <td>5th Match</td>
+                                <td>12 Jan</td>
+                                <td style="color: lightcoral;">No result</td>
+                                </tr>
+                                <tr>
+                                <td>Joburg Super Kings</td>
+                                <td>8th Match</td>
+                                <td>14 Jan</td>
+                                <td style="color: lightcoral;">Loss by 28 runs</td>
+                                </tr>
+                                <tr>
+                                <td>Sunrisers Eastern Cape</td>
+                                <td>11th Match</td>
+                                <td>17 Jan</td>
+                                <td> </td>
+                                </tr>
+                                <tr>
+                                <td>Sunrisers Eastern Cape</td>
+                                <td>14th Match</td>
+                                <td>19 Jan</td>
+                                <td> </td>
+                                </tr>
+                                <tr>
+                                <td>MI Cape Town</td>
+                                <td>16th Match</td>
+                                <td>21 Jan</td>
+                                <td> </td>
+                                </tr>
+                                <tr>
+                                <td>Paarl Royals</td>
+                                <td>18th Match</td>
+                                <td>23 Jan</td>
+                                <td> </td>
+                                </tr>
+                                <tr>
+                                <td>MI Cape Town</td>
+                                <td>21st Match</td>
+                                <td>25 Jan</td>
+                                <td> </td>
+                                </tr>
+                                <tr>
+                                <td>Paarl Royals</td>
+                                <td>23rd Match</td>
+                                <td>27 Jan</td>
+                                <td> </td>
+                                </tr>
+                                <tr>
+                                <td>Joburg Super Kings</td>
+                                <td>29th Match</td>
+                                <td>01 Feb</td>
+                                <td> </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                        </tr>
+                    
+                        <tr>
+                            <!-- <td><img src="img/pr.png" alt="Paarl Royals Logo" style="width: 30px; height: 30px;"></td> -->
+                            <td>Paarl Royals</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <td class="nrr" onclick="toggleDropdown('PR')"> -0.528  ▼</td>
+                          </tr>
+                          <tr id="PR" class="dropdown-content2">
+                            <td colspan="8">
+                              <table>
+                                <thead>
+                                    <tr>
+                                        <th>Opponent</th>
+                                        <th>Description</th>
+                                        <th>Date</th>
+                                        <th>Result</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+    
+                                        <tr>
+                                            <td>Sunrisers Eastern Cape</td>
+                                            <td>3rd Match</td>
+                                            <td>11 Jan</td>
+                                            <td style="color: lightcoral;">Won by 9 wickets</td>
+                                          </tr>
+                                          <tr>
+                                            <td>MI Cape Town</td>
+                                            <td>6th Match</td>
+                                            <td>13 Jan</td>
+                                            <td style="color: lightcoral;">Loss by 33 runs</td>
+                                          </tr>
+                                          <tr>
+                                            <td>MI Cape Town</td>
+                                            <td>9th Match</td>
+                                            <td>15 Jan</td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Pretoria Capitals</td>
+                                            <td>12th Match</td>
+                                            <td>18 Jan</td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Joburg Super Kings</td>
+                                            <td>15th Match</td>
+                                            <td>20 Jan</td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Durban Super Giants</td>
+                                            <td>18th Match</td>
+                                            <td>23 Jan</td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Pretoria Capitals</td>
+                                            <td>20th Match</td>
+                                            <td>25 Jan</td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Durban Super Giants</td>
+                                            <td>23rd Match</td>
+                                            <td>27 Jan</td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Joburg Super Kings</td>
+                                            <td>26th Match</td>
+                                            <td>30 Jan</td>
+                                            <td> </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Sunrisers Eastern Cape</td>
+                                            <td>28th Match</td>
+                                            <td>01 Feb</td>
+                                            <td> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+    
+                                  <tr>
+                                    <td>Sunrisers Eastern Cape</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td class="nrr" onclick="toggleDropdown('sec')"> -2.423 ▼</td>
+                                  </tr>
+                                  <tr id="sec" class="dropdown-content2">
+                                    <td colspan="8">
+                                      <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Opponent</th>
+                                                <th>Description</th>
+                                                <th>Date</th>
+                                                <th>Result</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                    <tr>
+                                        <td>MI Cape Town</td>
+                                        <td>1st Match</td>
+                                        <td>09 Jan</td>
+                                        <td style="color: lightcoral;">Loss by 97 runs</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Paarl Royals</td>
+                                        <td>3rd Match</td>
+                                        <td>11 Jan</td>
+                                        <td style="color: lightcoral;">Loss by 9 wickets</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Pretoria Capitals</td>
+                                        <td>7th Match</td>
+                                        <td>14 Jan</td>
+                                        <td style="color: lightcoral;">Loss by 6 wickets</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Durban Super Giants</td>
+                                        <td>11th Match</td>
+                                        <td>17 Jan</td>
+                                        <td> </td>
+                                        </tr>
+                                        <tr>
+                                        <td>Durban Super Giants</td>
+                                        <td>14th Match</td>
+                                        <td>19 Jan</td>
+                                        <td> </td>
+                                        </tr>
+                                        <tr>
+                                        <td>Pretoria Capitals</td>
+                                        <td>17th Match</td>
+                                        <td>22 Jan</td>
+                                        <td> </td>
+                                        </tr>
+                                        <tr>
+                                        <td>Joburg Super Kings</td>
+                                        <td>19th Match</td>
+                                        <td>24 Jan</td>
+                                        <td> </td>
+                                        </tr>
+                                        <tr>
+                                        <td>Joburg Super Kings</td>
+                                        <td>22nd Match</td>
+                                        <td>26 Jan</td>
+                                        <td> </td>
+                                        </tr>
+                                        <tr>
+                                        <td>MI Cape Town</td>
+                                        <td>25th Match</td>
+                                        <td>29 Jan</td>
+                                        <td> </td>
+                                        </tr>
+                                        <tr>
+                                        <td>Paarl Royals</td>
+                                        <td>28th Match</td>
+                                        <td>01 Feb</td>
+                                        <td> </td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                                </tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <script>
+        function toggleDropdown(id) {
+          // Get all dropdowns and hide them
+          const dropdowns = document.querySelectorAll('.dropdown-content2');
+          dropdowns.forEach(dropdown => {
+            if (dropdown.id !== id) {
+              dropdown.style.display = 'none';
+            }
+          });
+    
+          // Toggle the clicked dropdown
+          const element = document.getElementById(id);
+          element.style.display = element.style.display === 'table-row' ? 'none' : 'table-row';
+        }
+      </script>
+
+
+<footer>
+  <div>
+  <h4>Quick Links</h4>
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="livescores.html">Live Scores</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  </div>
+  <div>
+      <a href="index.html"><img src="img/Screenshot (39).png" alt="Footer Logo" id="footer-logo"></a>
+  </div>
+  <div class="footer-container">
+      <p>Follow us on <br><br>
+      <a href="https://www.facebook.com/?_rdr" class="social-icon" style="color: #3b5998;">
+          <i class="fab fa-facebook"></i> 
+      </a> 
+      <a href="https://x.com/i/flow/login" class="social-icon" style="color: lightgray;">
+          <i class="fab fa-twitter"></i>
+      </a> 
+      <a href="https://www.instagram.com/?hl=en" class="social-icon" style="color: orangered;">
+          <i class="fab fa-instagram"></i> 
+      </a> 
+      <a href="https://web.whatsapp.com/" class="social-icon" style="color: green;">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+      </p>
+      <p>&copy; 2024<a href="index.html" style="color: aliceblue;">TRI-CriC</a>.All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <script>
+
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+  }  
+  </script>
+
+
+    </body>
+    </html>
+    

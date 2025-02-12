@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/Screenshot (39).png" type="image/png">  
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+    background-color:lightgray;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  .logo img:hover{
+    background-color: aliceblue;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 35px;
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration:palegoldenrod;
+    color:cadetblue;
+    font-weight: bold;
+  }
+  
+  .navbar ul li a:hover {
+    text-decoration:palegoldenrod;
+    color: black;
+  }
+  
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    z-index: 1;
+    left: 0;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content a {
+    color: cadetblue;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .search-container input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-container button {
+    padding: 6px 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .search-container button:hover {
+    background-color: #45a049;
+  }
+        .container-US {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div {
+    margin: 10px 0;
+}
+footer h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin-bottom: 8px;
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+footer ul li a:hover {
+    color: #ff6347;
+}
+#footer-logo {
+    max-width: 150px;
+}
+.footer-container {
+    text-align: center;
+}
+.social-icon {
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #ff6347;
+}
+.footer-container p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+.footer-container a {
+    color: lightblue;
+    text-decoration: none;
+}
+.footer-container a:hover {
+    color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    #footer-logo {
+        margin: 20px 0;
+    }
+}
+/* #footer-logo:hover {
+  background-color: white;
+  cursor: pointer;
+} */
+
+.section1{
+            padding: 50px;
+            text-align: left;
+            background-color: #ffffff;
+        }
+        .section h1 {
+            font-size: 2.5em;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+        }
+        .section h1 span {
+            color: #f7b801;
+        }
+        .features {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #00796b;
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+        .feature-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #004c40;
+        }
+        .feature-description {
+            font-size: 0.95em;
+            color: #555555;
+            margin: 5px;
+            
+        }
+
+        
+
+        @media (max-width: 768px) {
+  header .navbar ul {
+      flex-direction: column;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+   #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    /* height: calc(100vh - 50px); */
+    width: 100%;
+    background-color: lightgray
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+      position: center;
+    }
+  }
+
+  /* @media (max-width: 768px){} */
+ 
+  #hamburger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mobile-menu li {
+    margin: 7px 0;
+  }
+  
+  .mobile-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  .mobile-menu li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Hamburger Active State */
+  #hamburger-icon.active .bar1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #hamburger-icon.active .bar2 {
+    opacity: 0;
+  }
+  
+  #hamburger-icon.active .bar3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Mobile Menu Active */
+  .mobile-menu.active {
+    display: flex;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: flex;
+    }
+  }
+  
+
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .search-container {
+    
+    align-items: stretch;
+  }
+
+  .search-container input, .search-container button {
+    width: 100%; /* Take full width on smaller screens */
+    font-size: 12px; /* Reduce font size */
+    
+  }
+
+  .search-container button {
+    margin-top: 5px; /* Add spacing between input and button */
+    width: 100px;
+    border-radius: 30px;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+              <a href="index.html">
+                <img src="img/Screenshot (39).png">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="livescores.html">Live Scores</a></li>
+                  <li><a href="Teams.html">Teams</a></li>
+                  <li><a href="schedule.html">Schedule</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <div class="dropdown">
+                    <li class="dropbtn" style="color: cadetblue;"><strong>more &#x25BE;</strong>
+                    <div class="dropdown-content">
+                      <a href="ipl.html">League Teams</a>
+                      <a href="points_table.html">Points Table</a>
+                      <a href="series All.html">Series</a>
+                      <a href="Gallaries.html">Gallaries</a>
+                      <a href="#Matches.html">Matches</a>
+                      <a href="#Highlights.html">Highlights</a>
+                    </div>
+                    </li>
+                  </div>
+               </ul>
+              </nav>
+              <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+              </div>
+              <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="livescores.html">livescores</a></li>
+                  <li><a href="Teams.html">Teams</a></li>
+                  <li><a href="schedule.html">Schedule</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+             </div>
+        </div>
+    </header>
+     <div class="container-US">
+        <h1 style="font-size: xx-large;">About Us</h1>
+        
+        <!-- Introduction Section -->
+        <div class="section">
+            <h2 style="font-size: xx-large;">Who We Are</h2>
+            <p><strong style="color:#04868F; font-size:x-large; font-family: Alex Brush,sans-serif;">We work for our customers.</strong> <br>are a Media Company with a IT angle with a smart mix of Talent, Professionalism And Marketing know-how.
+               We Craft Marketing Vision as well as other requirements of Our Customers from concept to Implementation, from thought to Masterpiece, minus the typical other solution providers hassle.
+              <br><br>
+              Our team takes the time to listen, learn, and collaborate closely with you at every step of the journey. 
+              Whether it's a web development project, digital marketing strategy, or production service, we prioritize your objectives and deliver results that exceed expectations. 
+              We are committed to transparency, keeping you informed throughout the process and ensuring that your input is valued and incorporated into the final product.</p>
+        </div>
+        
+        <!-- Features Section -->
+        <div class="section">
+            <h2 style="font-size: xx-large;">Our Features</h2>
+            <ul>
+                <li>**Live Discussions**: Participate in real-time debates with advanced messaging features.</li>
+                <li>**Expert Opinions**: Access insights from industry experts and thought leaders.</li>
+                <li>**Real-Time Updates**: Stay informed with live updates, transcription, and fact-checking tools.</li>
+                <li>**Interactive Tools**: Enjoy features like audience polls, speaker timers, and emoji reactions.</li>
+            </ul>
+        </div>
+
+        <!-- Mission Statement -->
+        <div class="section">
+            <h2 style="font-size: xx-large;">Dedicated to Delivering for You.</h2>
+            <p>We pride ourselves on delivering not just high-quality work, 
+              but also an outstanding customer experience.
+               From the initial consultation to post-project support, 
+               our goal is to build long-term relationships based on trust, 
+               reliability, and mutual success. Your satisfaction is our top priority,
+                and we are always ready to go the extra mile to ensure that every project is completed on time,
+                 within budget, and to the highest standard.</p>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="section1">
+            <h1>Why Choose Us <span>?</span></h1>
+              <div class="features">
+                  <div class="feature">
+                      <div class="feature-icon">&#9654;</div>
+                      <div>
+                          <div class="feature-title">Technology driven services</div>
+                          <div class="feature-description">Our services are the evidence of neoteric technology enactment.</div>
+                      </div>
+                  </div>
+                  <div class="feature">
+                      <div class="feature-icon">&#9654;</div>
+                      <div>
+                          <div class="feature-title">High end security</div>
+                          <div class="feature-description">Being at the top, security is the foremost essence in our solution to keep business confidential.</div>
+                      </div>
+                  </div>
+                  <div class="feature">
+                      <div class="feature-icon">&#9654;</div>
+                      <div>
+                          <div class="feature-title">Automation</div>
+                          <div class="feature-description">Automated solutions to reduce red tape, delays, and fix responsibilities for efficient, effective, and economical solutions.</div>
+                      </div>
+                  </div>
+                  <div class="feature">
+                      <div class="feature-icon">&#9654;</div>
+                      <div>
+                          <div class="feature-title">Mobility</div>
+                          <div class="feature-description">Mobility is the root of digitization. And we keep Mobility at height for business magnification.</div>
+                      </div>
+                  </div>
+                  <div class="feature">
+                      <div class="feature-icon">&#9654;</div>
+                      <div>
+                          <div class="feature-title">Customization</div>
+                          <div class="feature-description">Horses for Courses is our funda. Customized solutions are what we are excellent at.</div>
+                      </div>
+                  </div>
+                  <div class="feature">
+                      <div class="feature-icon">&#9654;</div>
+                      <div>
+                          <div class="feature-title">Experience</div>
+                          <div class="feature-description">Experience is the icing on the cake that differentiates us from the rest.</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        <!-- Call to Action -->
+        <div class="cta">
+            <h2 style="font-size: xx-large;">Join Our Community</h2>
+            <p>Ready to be part of something exciting? Join us today and start exploring the endless possibilities of meaningful debates and discussions.</p>
+            <button onclick="window.location.href='signup.html'">Get Started</button>
+        </div>
+    </div>
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="livescores.html">Live Scores</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="index.html"><img src="img/Screenshot (39).png" alt="Footer Logo" id="footer-logo"></a>
+    </div>
+    <div class="footer-container">
+      <p>Follow us on <br><br>
+        <a href="https://www.facebook.com/?_rdr" class="social-icon" style="color: #3b5998;">
+          <i class="fab fa-facebook"></i> 
+        </a> 
+        <a href="https://x.com/i/flow/login" class="social-icon" style="color: lightgray;">
+          <i class="fab fa-twitter"></i>
+        </a> 
+        <a href="https://www.instagram.com/?hl=en" class="social-icon" style="color: orangered;">
+          <i class="fab fa-instagram"></i> 
+        </a> 
+        <a href="https://web.whatsapp.com/" class="social-icon" style="color: green;">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </p>
+      <p>&copy; 2024<a href="index.html" style="color: aliceblue;">TRI-CriC</a>.All Rights Reserved.</p>
+    </div>
+    </footer>
+    
+    <script>
+       
+  function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+    }
+    </script>
+</body>
+</html>

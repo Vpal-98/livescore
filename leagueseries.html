@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Scores</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="img/Screenshot (39).png" type="image/png" />
+    <link rel="stylesheet" href="./static/css/series.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/Screenshot (39).png" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">Live Scores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dropdown">
+              <li class="dropbtn" style="color: cadetblue">
+                <strong>more &#x25BE;</strong>
+                <div class="dropdown-content">
+                  <a href="ipl.html">League Teams</a>
+                  <a href="points_table.html">Points Table</a>
+                  <a href="series All.html">Series</a>
+                  <a href="Gallaries.html">Gallaries</a>
+                  <a href="#Matches.html">Matches</a>
+                  <!-- <a href="#Highlights.html">Highlights</a> -->
+                </div>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="livescores.html">livescores</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="schedule-container">
+      <div class="header">Present & Upcoming Series</div>
+
+      <div class="filter-buttons">
+        <a href="series All.html"><button>All</button></a>
+        <a href="international series.html"><button>International</button></a>
+        <a href="domestic series.html"><button>Domestic</button></a>
+        <a href="leagueseries.html"><button>T20 Leagues</button></a>
+        <a href="womenseries.html"><button>Women</button></a>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">December 2024</div>
+        <div class="series">
+          <div class="series-name">Big Bash League 2024-25</div>
+          <div class="series-dates">Dec 15 - Jan 27</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Super Smash 2024-25</div>
+          <div class="series-dates">Dec 26 - Feb 02</div>
+        </div>
+        <div class="series">
+          <div class="series-name">Bangladesh Premier League, 2024-25</div>
+          <div class="series-dates">Dec 30 - Feb 07</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">January 2025</div>
+        <div class="series">
+          <div class="series-name">SA20, 2025</div>
+          <div class="series-dates">Jan 09 - Feb 08</div>
+        </div>
+        <div class="series">
+          <div class="series-name">International League T20, 2025</div>
+          <div class="series-dates">Jan 11 - Feb 09</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">March 2025</div>
+        <div class="series">
+          <div class="series-name">Indian Premier League 2025</div>
+          <div class="series-dates">Mar 14 - May 25</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">May 2025</div>
+        <div class="series">
+          <div class="series-name">T20 Blast 2025</div>
+          <div class="series-dates">May 29 - Sep 13</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">March 2026</div>
+        <div class="series">
+          <div class="series-name">Indian Premier League 2026</div>
+          <div class="series-dates">Mar 15 - May 31</div>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="month">March 2027</div>
+        <div class="series">
+          <div class="series-name">Indian Premier League 2027</div>
+          <div class="series-dates">Mar 14 - May 30</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="livescores.html">Live Scores</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="index.html"
+          ><img
+            src="img/Screenshot (39).png"
+            alt="Footer Logo"
+            id="footer-logo"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <p>
+          Follow us on <br /><br />
+          <a
+            href="https://www.facebook.com/?_rdr"
+            class="social-icon"
+            style="color: #3b5998"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://x.com/i/flow/login"
+            class="social-icon"
+            style="color: lightgray"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/?hl=en"
+            class="social-icon"
+            style="color: orangered"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://web.whatsapp.com/"
+            class="social-icon"
+            style="color: green"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </p>
+        <p>
+          &copy; 2024<a href="index.html" style="color: aliceblue">TRI-CriC</a
+          >.All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
