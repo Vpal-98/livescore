@@ -127,7 +127,7 @@ main {
 main {
   position: relative;
   height: 100vh; /* Full viewport height */
-  background-image: url("/static/img/t20i.avif"); /* Add your image path */
+  background-image: url("../img/t20i.avif"); /* Add your image path */
   background-size: cover; /* Scales the image to cover the entire container */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
